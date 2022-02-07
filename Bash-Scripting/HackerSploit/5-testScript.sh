@@ -26,6 +26,8 @@ else
 fi
 
 #! Create folder
+
+
 if [ -e  /d/videoTutorialFiles/2022/Bash-Scripting/HackerSploit/directory/test-2.txt ];
 then
     echo "File is found"
