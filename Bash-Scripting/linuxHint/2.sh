@@ -1,7 +1,6 @@
 
 # Echo Command without new lines
 
-
 echo -n "Hello"
 echo "World"
 
