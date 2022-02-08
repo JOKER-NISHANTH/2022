@@ -1,8 +1,7 @@
 #	Create a Symbol Link(Copy) , Write to Linked File , Cat Link file
 
 
-# ln -s <file-name>  <link-name> ;  -s for saved 
-
+# ln -s <file-name>  <link-name> ;  -s for saved
 
 touch /home/nisha/learn/bashScript/linuxHint/textFiles/symbolLink-file.txt
 echo "Symbol Link" > /home/nisha/learn/bashScript/linuxHint/textFiles/symbolLink-file.txt
@@ -14,4 +13,3 @@ ls textFiles
 echo "Coder is Nisha Again , Good to go!" >> /home/nisha/learn/bashScript/linuxHint/textFiles/link1
 
 cat /home/nisha/learn/bashScript/linuxHint/textFiles/link1
-
