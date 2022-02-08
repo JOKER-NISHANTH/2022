@@ -2,5 +2,4 @@
 
 VAR=$USER
 
-
 echo "$VAR"
