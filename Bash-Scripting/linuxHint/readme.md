@@ -1,6 +1,6 @@
 # 212 Bash Scripting Examples
 
-1.	Hello World 
+1.	Hello World
 2.	Echo Command without new lines
 3.	String Concatenation with Echo
 4.	String Continuation Character
@@ -21,7 +21,7 @@
 19.	USER variable
 20.	HOSTNAME variable
 21.	Echo $HOME with Escape to Avoid Expansion
-22. 	Writing to file in Home directory using $HOME Environment Variable
+22. Writing to file in Home directory using $HOME Environment Variable
 23.	Simple Touch Command
 24.	Create a Symbol Link , Write to Linked File , Cat Link file
 25.	Chmod Command , Make Executable
@@ -30,4 +30,3 @@
 28.	Underscore variable,touch file , use underscore variable to append it
 29.	Let Command Arithmetic
 30.	4 Basic Operators , Add , Subtract , Multiple and Divide
-
