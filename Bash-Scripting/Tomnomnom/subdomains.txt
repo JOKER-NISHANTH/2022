@@ -1,0 +1,14 @@
+admin
+test
+qa
+dev
+www
+n
+forums
+invalid
+blog
+shop
+sports
+news
+mail
+ftp

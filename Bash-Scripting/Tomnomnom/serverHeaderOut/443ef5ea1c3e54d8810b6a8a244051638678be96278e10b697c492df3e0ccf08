@@ -1,0 +1,65 @@
+*   Trying 1.1.1.1:443...
+* Connected to test.yahoo.com (1.1.1.1) port 443 (#0)
+* ALPN, offering h2
+* ALPN, offering http/1.1
+} [5 bytes data]
+* TLSv1.3 (OUT), TLS handshake, Client hello (1):
+} [512 bytes data]
+* TLSv1.3 (IN), TLS handshake, Server hello (2):
+{ [122 bytes data]
+* TLSv1.3 (IN), TLS handshake, Encrypted Extensions (8):
+{ [19 bytes data]
+* TLSv1.3 (IN), TLS handshake, Certificate (11):
+{ [2602 bytes data]
+* TLSv1.3 (IN), TLS handshake, CERT verify (15):
+{ [80 bytes data]
+* TLSv1.3 (IN), TLS handshake, Finished (20):
+{ [52 bytes data]
+* TLSv1.3 (OUT), TLS change cipher, Change cipher spec (1):
+} [1 bytes data]
+* TLSv1.3 (OUT), TLS handshake, Finished (20):
+} [52 bytes data]
+* SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384
+* ALPN, server accepted to use h2
+* Server certificate:
+*  subject: C=US; ST=California; L=San Francisco; O=Cloudflare, Inc.; CN=cloudflare-dns.com
+*  start date: Oct 25 00:00:00 2021 GMT
+*  expire date: Oct 25 23:59:59 2022 GMT
+*  issuer: C=US; O=DigiCert Inc; CN=DigiCert TLS Hybrid ECC SHA384 2020 CA1
+*  SSL certificate verify result: unable to get local issuer certificate (20), continuing anyway.
+* Using HTTP2, server supports multiplexing
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+} [5 bytes data]
+* Using Stream ID: 1 (easy handle 0x55ae2f7cc6d0)
+} [5 bytes data]
+> GET / HTTP/2
+> Host: test.yahoo.com
+> user-agent: curl/7.81.0
+> accept: */*
+> 
+{ [5 bytes data]
+* TLSv1.3 (IN), TLS handshake, Newsession Ticket (4):
+{ [230 bytes data]
+* TLSv1.3 (IN), TLS handshake, Newsession Ticket (4):
+{ [230 bytes data]
+* old SSL session ID is stale, removing
+{ [5 bytes data]
+* Connection state changed (MAX_CONCURRENT_STREAMS == 256)!
+} [5 bytes data]
+< HTTP/2 403 
+< server: cloudflare
+< date: Thu, 10 Feb 2022 12:06:57 GMT
+< content-type: text/html
+< content-length: 151
+< cf-ray: 6db536e298833187-BOM
+< 
+{ [151 bytes data]
+* Connection #0 to host test.yahoo.com left intact
+<html>
+<head><title>403 Forbidden</title></head>
+<body>
+<center><h1>403 Forbidden</h1></center>
+<hr><center>cloudflare</center>
+</body>
+</html>
