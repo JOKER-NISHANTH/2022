@@ -1,0 +1,23 @@
+Basic Recon Automation
+
+1. Passive enumeration
+    subfinder
+    assetfinder
+    amass
+
+2.  Active enumeration
+    shuffledns
+
+3. Resolve Domains
+    shuffledns
+
+4. Looking for HTTP/HTTPS Domains
+    httpx
+
+5. Screen Shot
+    aquatone
+
+6. Port Scan
+    masscan + nmap
+
+7. 
