@@ -13,11 +13,16 @@ Basic Recon Automation
 
 4. Looking for HTTP/HTTPS Domains
     httpx
-
-5. Screen Shot
-    aquatone
+-----------------------------------------------------
+5. waybackurl
 
 6. Port Scan
     masscan + nmap
 
-7. 
+7. Screen Shot
+    aquatone
+
+8. httpx + nuclei = CVES + VULNS + TECHH
+
+
+-----------------------------------------------------
