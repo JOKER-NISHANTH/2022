@@ -1,4 +1,6 @@
 
+#!/bin/bash
+
 $domain = $1
 
 amass intel -whois -d $domain
