@@ -14,15 +14,20 @@ Basic Recon Automation
 4. Looking for HTTP/HTTPS Domains
     httpx
 -----------------------------------------------------
-5. waybackurl
+5. Scan HTTP/HTTPS results with nuclei
+    nuclei - CVE , VULNS , Files , Tech
 
-6. Port Scan
-    masscan + nmap
+6. Fetch waybackurl Data
+    waybackurls
 
-7. Screen Shot
-    aquatone
+7. Filter "valid" urls from wayback Data
 
-8. httpx + nuclei = CVES + VULNS + TECHH
+    ffuf
+
+
+8. Filter results with gf
+
+    gf xss , gf ssrf , ......
 
 
 -----------------------------------------------------
