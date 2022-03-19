@@ -1,10 +1,9 @@
 const router = require("express").Router();
 const User = require("../model/user")
-const bcrypt = require('bcryptjs');
+const bcrypt = require('bcryptjs'); // encrypt
+const JWT = require("jsonwebtoken"); // for session related
 
 const {registerValidation,loginValidation} = require("../validation");
-const { findOne } = require("../model/user");
-
 
 router.get("/", (req, res) => {
     res.send("Register Page")
@@ -53,7 +52,6 @@ router.post("/register", async (req,res)=>{
 
 router.post("/login", async (req, res) => {
 
-
     //* Lets validate the user data
     const { error } = loginValidation(req.body);
     if (error) return res.status(400).json({ msg: error.details[0].message });
@@ -64,14 +62,10 @@ router.post("/login", async (req, res) => {
         msg:"Sorry! , Invalid Email \n Please register..."
     })
 
-    const { email, password } = await User.findOne({ email: req.body.email });
-    // console.log(email)
-    console.log(password)
-    // res.send(req.body)
+    const { password } = await User.findOne({ email: req.body.email });
 
     //* Lets check the password
     const validPass = await bcrypt.compare(req.body.password,password)
-    console.log(validPass);
     if (!validPass) return res.status(401).json({ msg: "Invalid Password :)" });
 
     res.status(200).json({msg:"Password Correct"})
