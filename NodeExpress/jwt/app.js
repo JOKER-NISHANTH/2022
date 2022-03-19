@@ -16,6 +16,7 @@ app.get("/", (req, res) => {
 
 // import the routes
 app.use("/api/v1/user", require("./routes/auth.route"));
+app.use("/api/v1/posts", require("./routes/posts"));
 
 const PORT = process.env.PORT;
 app.listen(PORT | 3000, () => console.log("Application is running"));
