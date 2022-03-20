@@ -23,15 +23,16 @@ const con = mySql.createPool({
     password: process.env.DB_PASS,
     database:process.env.DB_NAME
 })
-// Check DB Connection
 
+
+// Check DB Connection
 con.getConnection((error, connection) => {
     if (error) throw error
     console.log("Connection Success");
 })
 
 // Setup routes
-app.use("/", require("./routes/routes"));
+app.use("/", require("./server/routes/routes"));
 
 // Setup Listing PORT
 app.listen(process.env.PORT || 5000, () => {
