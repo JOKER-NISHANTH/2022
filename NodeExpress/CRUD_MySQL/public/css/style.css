@@ -23,8 +23,49 @@ h3 {
     padding: 10px;
     color: tomato;
     border-bottom: 1px solid #2e2e2e;
+    text-align: center;
 }
 
-a {
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border-collapse: collapse;
+}
+
+
+table thead td {
+    padding: 5px;
+    background-color: darkgray;
+    color: white;
+    font-weight: bold;
+}
+
+table tbody td {
+    padding: 5px;
+
+}
+
+/* Check background color for even tr */
+
+table tbody tr:nth-child(even) {
+    background-color: #fff;
+    background-color: rgba(220, 206, 206, 0.61);
+}
+
+.edit,
+.delete {
     text-decoration: none;
+    color: wheat;
+    background-color: rgb(232, 90, 232);
+    display: block;
+    width: 50%;
+    padding: 2px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.delete {
+    background-color: red;
 }
