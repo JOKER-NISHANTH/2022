@@ -29,7 +29,6 @@ h3 {
 
 table {
     width: 100%;
-    margin-top: 20px;
     padding: 10px;
     border-collapse: collapse;
 }
@@ -55,17 +54,47 @@ table tbody tr:nth-child(even) {
 }
 
 .edit,
-.delete {
+.delete,
+.adduser {
     text-decoration: none;
     color: wheat;
     background-color: rgb(232, 90, 232);
-    display: block;
-    width: 50%;
-    padding: 2px;
+    padding: 2px 10px 2px 10px;
     text-align: center;
     border-radius: 5px;
 }
 
 .delete {
     background-color: red;
+}
+
+p {
+    text-align: right;
+    padding: 5px;
+}
+
+.adduser {
+    background-color: blue;
+}
+
+.form-group {
+
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.form-group label,
+.form-group input {
+    display: block;
+}
+
+button {
+
+    color: wheat;
+    background-color: rgb(232, 90, 232);
+    padding: 2px 10px 2px 10px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
 }

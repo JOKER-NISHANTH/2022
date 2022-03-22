@@ -1,22 +1,20 @@
 require("dotenv").config();
 const express = require("express");
 const exphbs = require("express-handlebars");
-
 const app = express();
+
+
+// passing data via post body , Setup
+app.use(express.urlencoded({extended:false}));
 app.use(express.json());
 
-// Setup Static Files
+//  Static Files Setup
 app.use(express.static("public"));
 
-// Setup template Engine
+//  template Engine Setup
 const handlebars = exphbs.create({ extname: ".hbs" });
 app.engine("hbs", handlebars.engine);
 app.set("view engine", "hbs");
-
-// MySQL Connection
-
-
-
 
 
 // Setup routes
