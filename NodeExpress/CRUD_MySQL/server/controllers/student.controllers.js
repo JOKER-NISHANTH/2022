@@ -27,7 +27,7 @@ exports.view = (req, res) => {
 exports.addUser = (req, res) => {
     res.render("addUsers");
 }
-exports.save = (req, res) => {
+exports.saveUser = (req, res) => {
 
     con.getConnection((error, connection) => {
         if (error) throw error
@@ -38,10 +38,17 @@ exports.save = (req, res) => {
         console.log(usrcity);
         connection.query("INSERT INTO  users(NAME,AGE,CITY) values(?,?,?)",[usrname,usrage,usrcity], (err, rows) => {
             connection.release(); // close the connection
-            if (!err) { console.log("Good"); res.render("addUsers"); }
+            if (!err) { console.log("Good"); res.render("addUsers",{msg:"User Details added success"}); }
             else console.log('Error' + err);
         });
     });
 
+
+}
+
+exports.updateUser = (req,res) => {
+    res.render("updateUser");
+}
+exports.deleteUser = (req, res) => {
 
 }

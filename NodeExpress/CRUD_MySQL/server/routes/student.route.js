@@ -7,6 +7,13 @@ router.get("/", studentController.view);
 
 // Add New Records
 router.get("/addUser", studentController.addUser);
-router.post("/addUser", studentController.save);
+router.post("/addUser", studentController.saveUser);
+
+// Update User
+router.get("/updateUser", studentController.updateUser);
+router.put("/updateUser", studentController.updateUser);
+
+// Delete User
+router.delete("/deleteUser", studentController.deleteUser);
 
 module.exports = router;
