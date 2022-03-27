@@ -14,6 +14,6 @@ router.get("/updateUser/:id", studentController.updateUser);
 router.post("/saveUpdate/:id", studentController.saveUpdate);
 
 // Delete User
-// router.delete("/deleteUser/:id", studentController.deleteUser);
+router.get("/deleteUser/:id", studentController.deleteUser);
 
 module.exports = router;

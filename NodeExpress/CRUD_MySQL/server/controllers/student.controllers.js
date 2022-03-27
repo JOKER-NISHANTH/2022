@@ -95,3 +95,18 @@ exports.saveUpdate = (req,res) => {
         });
     });
 }
+
+exports.deleteUser = (req, res) => {
+    con.getConnection((err, connection) => {
+        if (err) throw err;
+        const { id } = req.params;
+        connection.query("DELETE FROM users WHERE ID=?", [id], (err, rows) => {
+            connection.release(); // close the connection
+            if (!err) {
+                res.redirect("/");
+            } else {
+                console.log(err)
+            }
+        });
+    })
+}

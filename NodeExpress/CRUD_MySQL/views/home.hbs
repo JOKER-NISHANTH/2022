@@ -21,7 +21,8 @@
             <td>{{this.AGE}}</td>
             <td>{{this.CITY}}</td>
             <td> <a class="edit" href="/updateUser/{{this.ID}}">Edit</a></td>
-            <td> <a class="delete" href="/deleteUser/{{this.ID}}">Delete</a></td>
+            <td> <a onclick="return confirm(' Are you sure ? ')" class="delete"
+                    href="/deleteUser/{{this.ID}}">Delete</a></td>
         </tr>
         {{/each}}
 
