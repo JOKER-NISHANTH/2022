@@ -10,10 +10,10 @@ router.get("/addUser", studentController.addUser);
 router.post("/addUser", studentController.saveUser);
 
 // Update User
-router.get("/updateUser", studentController.updateUser);
-router.put("/updateUser", studentController.updateUser);
+router.get("/updateUser/:id", studentController.updateUser);
+router.post("/saveUpdate/:id", studentController.saveUpdate);
 
 // Delete User
-router.delete("/deleteUser", studentController.deleteUser);
+// router.delete("/deleteUser/:id", studentController.deleteUser);
 
 module.exports = router;

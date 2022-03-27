@@ -1,27 +1,29 @@
 <h3>Edit Student Details</h3>
 {{#if msg}}
-<div class="alert">{{msg}}</div>
+<div class="alert"> {{msg}} </div>
 {{/if}}
 
-<form action="/updateUser" method="post">
+{{#each rows }}
+<form action="/saveUpdate/{{this.ID}}" method="post">
 
     <div class="form-group">
         <label for="name">Name</label>
-        <input type="text" id="name" name="usrname">
+        <input type="text" id="name" name="usrname" value="{{this.NAME}}">
     </div>
 
     <div class="form-group">
         <label for="age">Age</label>
-        <input type="text" id="name" name="usrage">
+        <input type="text" id="name" name="usrage" value="{{this.AGE}}">
     </div>
 
     <div class="form-group">
         <label for="city">City</label>
-        <input type="text" id="city" name="usrcity">
+        <input type="text" id="city" name="usrcity" value="{{this.CITY}}">
     </div>
     <div class="form-group">
-        <button type="submit">Save Details</button>
+        <button type="submit"> Update </button>
         <a href="/">View All</a>
     </div>
 
 </form>
+{{/each }}

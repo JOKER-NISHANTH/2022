@@ -46,9 +46,52 @@ exports.saveUser = (req, res) => {
 
 }
 
-exports.updateUser = (req,res) => {
-    res.render("updateUser");
-}
-exports.deleteUser = (req, res) => {
+exports.updateUser = (req, res) => {
 
+    // display the data
+    con.getConnection((error, connection) => {
+        if (error) throw error;
+        // get id from url
+        const { id } = req.params;
+        connection.query("SELECT * FROM users WHERE id=?", [id], (err, rows) => {
+            connection.release(); // close the connection
+            if (!err) {
+                res.render("updateUser", { rows });
+            }
+            else {
+                console.log('Error' + err);
+            }
+        });
+    });
+}
+
+exports.saveUpdate = (req,res) => {
+    con.getConnection((error, connection) => {
+        if (error) throw error;
+        const { id } = req.params;
+        const { usrname, usrage, usrcity } = req.body;
+
+        connection.query("UPDATE  users set NAME=?,AGE=?,CITY=? WHERE ID=?",[usrname,usrage,usrcity,id], (err, rows) => {
+            connection.release(); // close the connection
+            if (!err) {
+
+                con.getConnection((error, connection) => {
+                    if (error) throw error;
+                    // get id from url
+                    const { id } = req.params;
+                    connection.query("SELECT * FROM users WHERE id=?", [id], (err, rows) => {
+                        connection.release(); // close the connection
+                        if (!err) {
+                            res.render("updateUser", {rows, msg: "User Details Updated success" });
+                        }
+                        else {
+                            console.log('Error' + err);
+                        }
+                    });
+                });
+
+            }
+            else console.log('Error' + err);
+        });
+    });
 }
