@@ -1,0 +1,23 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="selectReader_LoadinListBox/Default.aspx">
+    <Files>
+      <File FileName="selectReader_LoadinListBox/Default.aspx" Line="20" Column="17" />
+      <File FileName="selectReader_LoadinListBox/Default.aspx.cs" Line="11" Column="3" />
+      <File FileName="selectReader_LoadinListBox/web.config" Line="13" Column="41" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="selectReader_LoadinListBox" expanded="True">
+            <Node name="Default.aspx" expanded="True" selected="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

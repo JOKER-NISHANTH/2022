@@ -1,0 +1,31 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="DataBaseCommands/update.aspx">
+    <Files>
+      <File FileName="DataBaseCommands/insert.aspx" Line="1" Column="1" />
+      <File FileName="DataBaseCommands/retriveAll.aspx" Line="19" Column="17" />
+      <File FileName="DataBaseCommands/Default.aspx" Line="1" Column="1" />
+      <File FileName="DataBaseCommands/update.aspx" Line="27" Column="7" />
+      <File FileName="DataBaseCommands/delete.aspx" Line="1" Column="1" />
+      <File FileName="DataBaseCommands/singleValue.aspx" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="DataBaseCommands" expanded="True">
+            <Node name="Default.aspx" expanded="True" />
+            <Node name="delete.aspx" expanded="True" />
+            <Node name="insert.aspx" expanded="True" />
+            <Node name="retriveAll.aspx" expanded="True" />
+            <Node name="singleValue.aspx" expanded="True" />
+            <Node name="update.aspx" expanded="True" selected="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
