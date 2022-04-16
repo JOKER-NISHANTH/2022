@@ -16,15 +16,15 @@
 
 ---
 
-[Diagram 1]("../img/d1.png")
+[Diagram 1]("../../img/d1.png")
 ### Database:
 ---
 
-[Diagram 2]("../img/d2.png")
+[Diagram 2]("../../img/d2.png")
 
 ---
 
-[Diagram 3]("../img/d3.png")
+[Diagram 3]("../../img/d3.png")
 
 
 ---
@@ -33,7 +33,7 @@
 *It's a Process of Storing and Retrieving the data or information*
 
 ---
-[Diagram 4]("../img/d4.png")
+[Diagram 4]("../../img/d4.png")
 
 ---
 ### DBMS:
@@ -49,3 +49,8 @@ DBMS is a Software or collection of programs to store/retrieve/modify/delete the
 
 ---
 ### Types of DBMS:
+
+-   Relational databases systems
+-   hierarchical database systems.
+-   network database systems.
+-   object-oriented database systems.
