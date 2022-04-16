@@ -15,15 +15,17 @@
  *Its a collection of processed data*
 
 ---
-#### Diagram 1
 
+[Diagram 1]("../img/d1.png")
 ### Database:
 ---
 
-Diagram 2
+[Diagram 2]("../img/d2.png")
 
 ---
-Diagram 3
+
+[Diagram 3]("../img/d3.png")
+
 
 ---
 ### Data Management:
@@ -31,7 +33,7 @@ Diagram 3
 *It's a Process of Storing and Retrieving the data or information*
 
 ---
-Diagram 4
+[Diagram 4]("../img/d4.png")
 
 ---
 ### DBMS:
