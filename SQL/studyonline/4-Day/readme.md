@@ -37,7 +37,7 @@ Tables:
 consists of rows and columns
 
 D-1
-
+![Diagram 1](./img/d1.png)
 ---
 Column:
 ---
