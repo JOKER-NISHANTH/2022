@@ -17,10 +17,20 @@ namespace DataListExmple {
 		
 		protected System.Web.UI.WebControls.DataList d1;
 		
+		protected System.Web.UI.WebControls.Button b1;
+		
+		protected System.Web.UI.WebControls.Button b2;
+		
 		protected System.Web.UI.WebControls.TextBox t1;
 		
 		protected System.Web.UI.WebControls.TextBox t2;
 		
 		protected System.Web.UI.WebControls.TextBox t3;
+		
+		protected System.Web.UI.WebControls.Button b3;
+		
+		protected System.Web.UI.WebControls.Button b4;
+		
+		protected System.Web.UI.WebControls.Label l1;
 	}
 }
