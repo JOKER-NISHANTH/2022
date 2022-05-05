@@ -1,0 +1,40 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\Nishanth\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add --exact --cwd D:\videoTutorialFiles\2022\Portfolio\portfolio react react-dom next
+
+PATH: 
+  C:\Users\Nishanth\AppData\Roaming\npm-cache\_npx\15852;C:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\Program Files\Java\jre1.8.0_281\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Python39\Scripts\;C:\Python39\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Go\bin;C:\xampp\php;C:\composer;C:\Program Files (x86)\dotnet\;C:\xampp\mysql\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\Nishanth\AppData\Local\Microsoft\WindowsApps;C:\Users\Nishanth\AppData\Roaming\npm;C:\Users\Nishanth\.dotnet\tools;C:\Program Files\heroku\bin;C:\Program Files (x86)\Nmap;C:\Users\Nishanth\go\bin;C:\Program Files\Wireshark;C:\Users\Nishanth\AppData\Roaming\Composer\vendor\bin;C:\Users\Nishanth\AppData\Local\Programs\Microsoft VS Code\bin
+
+Yarn version: 
+  1.22.18
+
+Node version: 
+  14.17.6
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: certificate is not yet valid
+      at TLSSocket.onConnectSecure (_tls_wrap.js:1514:34)
+      at TLSSocket.emit (events.js:400:28)
+      at TLSSocket._finishInit (_tls_wrap.js:936:8)
+      at TLSWrap.ssl.onhandshakedone (_tls_wrap.js:708:12)
+
+npm manifest: 
+  {
+    "name": "portfolio",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+      "dev": "next dev",
+      "build": "next build",
+      "start": "next start",
+      "lint": "next lint"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
