@@ -5,10 +5,15 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      'kaushan': ['Kaushan Script'],
+      'kaushan': ["Kaushan Script"],
+      'poppins': [ 'Poppins'],
     },
     extend: {
-
+      colors: {
+        green: {
+          DEFAULT:'#00F260'
+       }
+      },
     },
   },
   plugins: [],

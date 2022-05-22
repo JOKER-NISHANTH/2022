@@ -5,8 +5,8 @@ const Sidebar = () => {
     return (
         <div>
             <img src="https://avatars.githubusercontent.com/u/67851976?s=400&u=eff8293134810288c8b0d3bc6294c30c405a1652&v=4" alt="profile" className='w-32 h-32 mx-auto rounded-full' />
-            <h3 className='my-4 text-3xl font-medium tracking-wider font-kaushan'><span>Nishanth</span> M</h3>
-            <p className='px-2 py-1 my-3 bg-gray-200 rounded-full'>Web Developer</p>
+            <h3 className='my-4 text-3xl font-medium  font-poppins'><span>Nishanth</span>M</h3>
+            <p className='px-2 py-1 my-3 bg-gray-200 rounded-full '>Web Developer</p>
             <a
                 href="" className='flex items-center justify-center px-2 py-1 my-3 bg-gray-200 rounded-full'
                 download="name">
