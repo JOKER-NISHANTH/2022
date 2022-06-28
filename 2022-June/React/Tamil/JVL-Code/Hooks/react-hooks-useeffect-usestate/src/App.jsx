@@ -1,4 +1,6 @@
 import {  useState } from "react";
+import AddUserForm from "./forms/AddUserForm";
+
 import { UserTable } from "./tables/UserTable";
 
 function App() {
@@ -18,6 +20,11 @@ function App() {
     setUsers([...users,user])
   }
 
+  //! delete user
+  const deleteUser = (id) => {
+    setUsers(users.filter((user)=>user.id!==id))
+  }
+
   const[users,setUsers] =useState(userData);
   return (
     <div className="container">
@@ -25,10 +32,11 @@ function App() {
       <div className="flex-row">
         <div className="flex-large">
           <h2>Add User</h2>
+          <AddUserForm addUser={ addUser}/>
         </div>
         <div className="flex-large">
           <h2>View User</h2>
-          <UserTable users={ users}/>
+          <UserTable deleteUser={deleteUser} users={ users}/>
         </div>
       </div>
     </div>
