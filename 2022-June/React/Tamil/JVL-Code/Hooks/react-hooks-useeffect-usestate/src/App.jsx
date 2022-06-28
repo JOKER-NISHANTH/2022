@@ -21,7 +21,8 @@ function App() {
 
   //! delete user
   const deleteUser = (id) => {
-    setUsers(users.filter((user)=>user.id!==id))
+    setUsers(users.filter((user) => user.id !== id))
+    setEditing(false);
   }
 
   const[users,setUsers] =useState(userData);
