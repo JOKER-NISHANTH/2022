@@ -1,0 +1,15 @@
+
+[Assembly AI](https://www.assemblyai.com/)
+
+[Chakra UI](https://chakra-ui.com/)
+
+---
+
+```
+    npx create-react-app speech2text --template @chakra-ui
+```
+
+```
+    npm i react-voice-recorder axios
+    npm i react-voice-recorder axios --legacy-peer-deps
+```
