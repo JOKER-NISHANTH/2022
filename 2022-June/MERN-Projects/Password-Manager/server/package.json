@@ -5,7 +5,7 @@
   "author": "Mr Black",
   "license": "MIT",
   "scripts": {
-    "dev":"ts-node-dev --exit-child --transpile-only src/main.ts"
+    "dev": "ts-node-dev --exit-child --transpile-only src/main.ts"
   },
   "devDependencies": {
     "@types/crypto-js": "^4.1.1",
