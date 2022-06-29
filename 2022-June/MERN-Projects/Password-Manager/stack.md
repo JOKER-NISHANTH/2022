@@ -16,4 +16,11 @@ npx tsc --init
 
 yarn add fastify pino mongoose @typegoose/typegoose argon2 zod fastify-zod @fastify/jwt crypto-js @fastify/cors @fastify/cookie lodash
 
+npm install pino-pretty -D
+
+yarn add pino-pretty -D
+
+```
+```
+http://travistidwell.com/jsencrypt/demo/
 ```
