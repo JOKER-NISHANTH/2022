@@ -1,5 +1,13 @@
-const arr = [-1,-2,-3,-4,0,1, 2, 3, 4];
-let result = arr.findIndex(item => {
-    return (item % 2 ===0 && item > 0)
-})
-console.log(`Result : => ${result}` )
+console.log("Class");
+class Person{
+    constructor(name, birthYear) {
+        this.name = name;
+        this.yearOfBirth = birthYear;
+    }
+    getDetails  () {
+        return `Name ${this.name} and Age ${2022 - this.yearOfBirth}`
+    }
+}
+const obj1 = new Person("Mr Black", 2000);
+// console.log(obj1.getDetails)
+console.log(obj1.getDetails())
