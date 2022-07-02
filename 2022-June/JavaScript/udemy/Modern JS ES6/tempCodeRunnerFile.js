@@ -1,9 +1,20 @@
-let fname= "Mr "
-let surname = "Black"
-let age = 22
-const personObj = {
-    fname,
-    surname,
-    age
-}
-console.log(personObj)
+const data = [
+    {
+    name: "Mr Black",
+    exp: 8,
+    hobbies:"Play Game",
+    },
+    {
+    name: "Mr Brown",
+    exp: 5,
+    hobbies:"Cooking"
+    }
+]
+// console.log(data.map((value) => value.name))
+let result = data.map((item) => {
+    return {
+        name: item.name,
+        exp:item.exp
+    }
+})
+console.log(result)
