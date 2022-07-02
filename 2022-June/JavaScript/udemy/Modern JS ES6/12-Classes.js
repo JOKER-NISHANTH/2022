@@ -14,7 +14,6 @@ console.log(obj1.getDetails())
 
 // *----------------------------------------------------------------------------
 
-console.log("Class");
 class Person{
     constructor(name, birthYear) {
         this.name = name;
@@ -25,5 +24,19 @@ class Person{
     }
 }
 const obj1 = new Person("Mr Black", 2000);
-// console.log(obj1.getDetails)
 console.log(obj1.getDetails())
+
+// *----------------------------------------------------------------------------
+class Pilot{
+    constructor(exp,type,license) {
+        this.experience = exp;
+        this.type = type;
+        this.license = license;
+    }
+    getData() {
+        console.log(`Experience ${this.experience} and type ${this.type}`);
+    }
+}
+const obj1 = new Pilot(10,"private jets","TC12345");
+obj1.getData()
+console.log(obj1);
