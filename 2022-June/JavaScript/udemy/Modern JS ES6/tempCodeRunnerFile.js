@@ -1,6 +1,5 @@
-const arr = [1, 2, 3, '4', 5, '6', 7, 8, 9];
-let result = arr.filter((val) => {
-    // return val % 2 == 0;
-    return val % 2 === 0;
+const arr = [-1,-2,-3,-4,0,1, 2, 3, 4];
+let result = arr.findIndex(item => {
+    return (item % 2 ===0 && item > 0)
 })
-console.log(result)
+console.log(`Result : => ${result}` )
