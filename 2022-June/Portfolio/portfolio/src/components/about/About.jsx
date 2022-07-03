@@ -18,15 +18,15 @@ const About = () => {
             <div className="about__cards">
               <article className="about__card">
                     < FaUserSecret className="about__icon"/>
-                    <h5>Web Pentester</h5>
                     <h5>Experience</h5>
-                    <small>6+ Months working</small>
+                    <h6>Pentester</h6>
+                    <small>6+ Months</small>
               </article>
               <article className="about__card">
                     < FaAward className="about__icon"/>
-                    <h5>Web Developer</h5>
                     <h5>Experience</h5>
-                    <small>1+ Years working</small>
+                    <h6>Developer</h6>
+                    <small>1+ Years</small>
               </article>
               <article className="about__card">
                     < VscFolderLibrary className="about__icon"/>
