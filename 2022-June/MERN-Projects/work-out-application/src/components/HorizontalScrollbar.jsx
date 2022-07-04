@@ -3,6 +3,9 @@ import { Box, Typography } from '@mui/material';
 import {ScrollMenu,VisibilityContext} from "react-horizontal-scrolling-menu"
 import BodyParts from "./BodyParts";
 
+// NOTE: for hide scrollbar
+import "./hideScrollbar.css";
+
 import RightArrowIcon from '../assets/icons/right-arrow.png';
 import LeftArrowIcon from '../assets/icons/left-arrow.png';
 
@@ -29,7 +32,7 @@ const RightArrow = () => {
 const HorizontalScrollbar = ({ data, bodyPart, setBodyPart }) => {
 
   return (
-    <ScrollMenu LeftArrow={LeftArrow} RightArrow={RightArrow}>
+    <ScrollMenu LeftArrow={LeftArrow} RightArrow={RightArrow}  onWheel={false}>
           {
               data.map((item) =>
                   (
