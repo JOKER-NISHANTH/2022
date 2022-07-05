@@ -26,7 +26,7 @@ const Content = () => {
   }
   return (
       <main>
-      <p>Hello {handleNameChange()}!</p>
+      <p onDoubleClick={handleClick}>Hello {handleNameChange()}!</p>
       {/* Normal function call using function reference */}
       <button onClick={handleClick}>Click It</button>
       {/* Passing Value to function */}
