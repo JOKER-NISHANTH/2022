@@ -1,16 +1,15 @@
 
 import './App.css';
+import Header from './components/Header';
+import Content from "./components/Content"
+import Footer from "./components/Footer"
 function App() {
-  const name = "Mr Black a.k.a Nishanth M"
-  const handleNameChange = () => {
-    const names = ['Black', "Brown", 'Red', "Blue"]
-    const ran = Math.floor(Math.random() * 4)
-    return names[ran]
-  }
+
   return (
     <center>
-      Hello world <br></br>
-      <code>{ handleNameChange() }</code>
+      <Header />
+      <Content />
+      <Footer />
     </center>
   );
 }
