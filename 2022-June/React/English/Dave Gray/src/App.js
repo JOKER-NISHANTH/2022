@@ -1,16 +1,17 @@
 
 import './App.css';
+
 import Header from './components/Header';
 import Content from "./components/Content"
 import Footer from "./components/Footer"
 function App() {
 
   return (
-    <center>
+    <div className='App'>
       <Header />
       <Content />
       <Footer />
-    </center>
+    </div>
   );
 }
 
