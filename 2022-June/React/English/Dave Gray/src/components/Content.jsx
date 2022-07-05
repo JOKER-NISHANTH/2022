@@ -1,25 +1,66 @@
 import React,{useState} from 'react'
-
+import { FaTrashAlt } from "react-icons/fa";
 const Content = () => {
-  const [count, setCount] = useState(1);
+  const initialState = [
+    {id: 1, checked: true,item:"Apple"},
+    {id: 2, checked: false,item:"Orange"},
+    {id: 3, checked: false,item:"Mango"},
+]
+  const [items, setItems] = useState(initialState);
 
-  const handlePlus = () => {
-    setCount(count+1)
-  }
-  const handleMinus = () => {
-    console.log(count)
-    if (!count > 0) return  alert("Negative value not allowed")
-    setCount(count - 1)
+  const handleCheck = (id) => {
+    console.log(`Key ID : ${id}`)
+    const listItems = items.map(
+      (item) =>  item.id === id ? { ...item, checked: !item.checked }:item
+    )
+    setItems(listItems)
+    localStorage.setItem("shoppinglist", JSON.stringify(listItems));
   }
 
+  const handleDelete = (id) => {
+    // console.log(id)
+    const listItems = items.filter((item) => (item.id !== id))
+    setItems(listItems)
+    localStorage.setItem("shoppinglist", JSON.stringify(listItems));
+  }
   return (
       <main>
+      {items.length ? (
+        <ul >
+          {
+            items.map((item) => {
+              return (
+                <li className="item" key={item.id}>
+                  <input
+                    type="checkbox"
+                    checked={item.checked}
+                    onChange={() => handleCheck(item.id)}
+                  />
 
-      {/* Count */}
-      <p> Current Count : {count}</p>
-      <button onClick={handlePlus} style={{ width:'80px',height:'20px', borderRadius:'5px'}}>+</button> <br />
-      <button onClick={handleMinus} style={{ width:'80px',height:'20px', borderRadius:'5px'}}>-</button>
+                  <label
+                    style={
+                      (item.checked) ? { textDecoration: 'line-through' } : null
+                    }
+                    onDoubleClick={() => handleCheck(item.id)}
+                  >{item.item}</label>
 
+                  <FaTrashAlt
+                    role="button"
+                    tabIndex="0"
+                    onClick={() => handleDelete(item.id)}
+                  />
+                </li>
+              )
+            })
+          }
+        </ul>
+      ) : (
+          // alert("No Data")
+          <p style={{
+            marginTop:'2rem',
+            color:'red'
+          }}>Your List is empty</p>
+      )}
     </main>
   )
 }
