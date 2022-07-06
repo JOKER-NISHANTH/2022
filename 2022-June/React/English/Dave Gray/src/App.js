@@ -4,6 +4,7 @@ import './App.css';
 import Header from './components/Header';
 import Content from "./components/Content"
 import Footer from "./components/Footer"
+import AddItem from "./components/AddItem";
 
 function App() {
   const initialState = [{id: 1, checked: true,item:"Apple"},
@@ -13,7 +14,8 @@ function App() {
 
   return (
     <div className='App'>
-      <Header title="Groceries"/>
+      <Header title="Groceries" />
+      <AddItem />
       <Content items={items} setItems={ setItems} />
       <Footer len={ items.length} />
     </div>
