@@ -5,6 +5,7 @@ import Header from './components/Header';
 import Content from "./components/Content"
 import Footer from "./components/Footer"
 import AddItem from "./components/AddItem";
+import SearchItem from "./components/SearchItem";
 
 function App() {
   // const initialState = [{id: 1, checked: true,item:"Apple"},
@@ -49,6 +50,7 @@ const handleSubmit = (e) => {
   setNewItem('')
 }
 
+  const [search, setSearch] = useState('')
 
   return (
     <div className='App'>
@@ -58,14 +60,29 @@ const handleSubmit = (e) => {
         setNewItem={setNewItem}
         handleSubmit={handleSubmit}
       />
+
+        <SearchItem
+        search={search}
+        setSearch={setSearch}
+
+      />
+
       <Content
-        items={items}
+        items={items.filter(
+          item =>
+            (
+              (item.item).toLowerCase()
+            ).includes(search)
+        )}
         setItems={setItems}
         handleCheck={handleCheck}
         handleDelete={handleDelete}
 
       />
-      <Footer len={ items.length} />
+
+      <Footer len={items.length} />
+
+
     </div>
   );
 }
