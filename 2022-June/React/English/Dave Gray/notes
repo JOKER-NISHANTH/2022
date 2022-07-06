@@ -1,2 +1,7 @@
 In React
     Object and Boolean not render
+
+Prop Drilling
+    Passing prop
+        1. parent to children
+        2. children(parent) to children and so on....
