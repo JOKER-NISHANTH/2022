@@ -1,8 +1,6 @@
-import React,{useState} from 'react'
 import { FaTrashAlt } from "react-icons/fa";
-const Content = ({items:datas}) => {
-  const initialState = datas;
-  const [items, setItems] = useState(initialState);
+const Content = ({items,setItems}) => {
+
 
   const handleCheck = (id) => {
     console.log(`Key ID : ${id}`)
