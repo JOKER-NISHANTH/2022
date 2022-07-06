@@ -1,23 +1,9 @@
 
+import setAndSaveItems from "../utils/setAndSaveItems";
 import ItemList from "./ItemList";
-const Content = ({items,setItems}) => {
+const Content = ({items,setItems,handleDelete,handleCheck}) => {
 
 
-  const handleCheck = (id) => {
-    console.log(`Key ID : ${id}`)
-    const listItems = items.map(
-      (item) =>  item.id === id ? { ...item, checked: !item.checked }:item
-    )
-    setItems(listItems)
-    localStorage.setItem("shoppinglist", JSON.stringify(listItems));
-  }
-
-  const handleDelete = (id) => {
-    // console.log(id)
-    const listItems = items.filter((item) => (item.id !== id))
-    setItems(listItems)
-    localStorage.setItem("shoppinglist", JSON.stringify(listItems));
-  }
   return (
       <main>
       {items.length ? (
