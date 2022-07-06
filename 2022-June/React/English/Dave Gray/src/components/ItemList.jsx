@@ -6,7 +6,9 @@ const ItemList = ({items,handleCheck,handleDelete}) => {
         {
             items.map((item) => {
                 return (
-                    <LineItem item={item}
+                    <LineItem
+                        key={item.id}
+                        item={item}
                         handleCheck={handleCheck}
                         handleDelete={handleDelete}
 
