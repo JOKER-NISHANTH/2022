@@ -1,4 +1,4 @@
-import {useState} from "react"
+import {useState , useEffect} from "react"
 import './App.css';
 
 import Header from './components/Header';
@@ -8,39 +8,50 @@ import AddItem from "./components/AddItem";
 import SearchItem from "./components/SearchItem";
 
 function App() {
-  const initialState = [{id: 1, checked: true,item:"Apple"},
-  {id: 2, checked: false,item:"Orange"},
-    { id: 3, checked: false, item: "Mango" },]
+  // const initialState = [{id: 1, checked: true,item:"Apple"},
+  // {id: 2, checked: false,item:"Orange"},
+  //   { id: 3, checked: false, item: "Mango" },]
+  const initialState =  JSON.parse((localStorage.getItem('shoppinglist')) )
+  const [items, setItems] = useState(initialState || []);
+  const [newItem, setNewItem] = useState('')
 
-  // const initialState = JSON.parse((localStorage.getItem('shoppinglist')) )
-  const [items, setItems] = useState(initialState);
+  useEffect(() => {
+    localStorage.setItem("shoppinglist", JSON.stringify(items));
+},[items])
 
-const [newItem, setNewItem] = useState('')
+  // console.log("Before useEffect")
+  // useEffect(() => {
+  //   console.log("Inside useEffect")
+  // },[items])
+  // console.log("After useEffect")
 
-const setAndSaveItems = (listItems) => {
-  setItems(listItems)
-  localStorage.setItem("shoppinglist", JSON.stringify(listItems));
-}
+// ? Result
+  /**
+   * Before useEffect
+   * After useEffect
+   * Inside useEffect
+   * useEffect async
+   */
 
 const handleCheck = (id) => {
   console.log(`Key ID : ${id}`)
   const listItems = items.map(
     (item) =>  item.id === id ? { ...item, checked: !item.checked }:item
   )
-  setAndSaveItems(listItems)
+  setItems(listItems)
 }
 
 const handleDelete = (id) => {
   // console.log(id)
   const listItems = items.filter((item) => (item.id !== id))
-  setAndSaveItems(listItems)
+  setItems(listItems)
 }
 
 const addItem = (item) => {
   const id = items.length ? items[items.length - 1].id + 1 : 1;
   const myNewItem = { id, checked: false, item };
   const listItems = [...items, myNewItem];
-  setAndSaveItems(listItems)
+  setItems(listItems)
 }
 const handleSubmit = (e) => {
   e.preventDefault();
