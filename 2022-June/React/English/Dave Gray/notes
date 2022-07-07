@@ -8,6 +8,8 @@ Prop Drilling
 
 Dev to Production
     npm i react-icons --save-prod
+-----------------------------------------------
+c11
 
  useEffect(() => {
     console.log("load time")
@@ -21,3 +23,10 @@ Dev to Production
   useEffect(() => {
     console.log("render")
   })
+
+-----------------------------------------------
+c12
+
+npx json-server -p 3500 -w src/data/db.json
+
+-----------------------------------------------

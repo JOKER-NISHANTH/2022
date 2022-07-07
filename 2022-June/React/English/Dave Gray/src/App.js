@@ -8,9 +8,7 @@ import AddItem from "./components/AddItem";
 import SearchItem from "./components/SearchItem";
 
 function App() {
-  // const initialState = [{id: 1, checked: true,item:"Apple"},
-  // {id: 2, checked: false,item:"Orange"},
-  //   { id: 3, checked: false, item: "Mango" },]
+
   const initialState =  JSON.parse((localStorage.getItem('shoppinglist')) )
   const [items, setItems] = useState(initialState || []);
   const [newItem, setNewItem] = useState('')
