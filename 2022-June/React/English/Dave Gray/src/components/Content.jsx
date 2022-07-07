@@ -5,7 +5,7 @@ const Content = ({items,setItems,handleDelete,handleCheck}) => {
 
 
   return (
-      <main>
+      <>
       {items.length ? (
         <ItemList items={items} handleCheck={handleCheck} handleDelete={ handleDelete} />
       ) : (
@@ -15,7 +15,7 @@ const Content = ({items,setItems,handleDelete,handleCheck}) => {
             color:'red'
           }}>Your List is empty</p>
       )}
-    </main>
+    </>
   )
 }
 

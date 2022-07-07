@@ -1,6 +1,5 @@
 import {useState , useEffect} from "react"
 import './App.css';
-
 import Header from './components/Header';
 import Content from "./components/Content"
 import Footer from "./components/Footer"
@@ -8,31 +7,30 @@ import AddItem from "./components/AddItem";
 import SearchItem from "./components/SearchItem";
 
 function App() {
-
-  const initialState =  JSON.parse((localStorage.getItem('shoppinglist')) )
-  const [items, setItems] = useState(initialState || []);
-  const [newItem, setNewItem] = useState('')
-
+  const API_URL = "http://localhost:3500/items";
+  const [items, setItems] = useState([]);
+  const [newItem, setNewItem] = useState('');
+  const [search, setSearch] = useState('');
+  const [fetchError, setFetchError] = useState(null);
+  const [isLoading, setIsLoading] = useState(true)
   useEffect(() => {
-    localStorage.setItem("shoppinglist", JSON.stringify(items));
-},[items])
-
-  // console.log("Before useEffect")
-  // useEffect(() => {
-  //   console.log("Inside useEffect")
-  // },[items])
-  // console.log("After useEffect")
-
-// ? Result
-  /**
-   * Before useEffect
-   * After useEffect
-   * Inside useEffect
-   * useEffect async
-   */
-
+    const fetchItems = async () => {
+      try {
+        const response = await fetch(API_URL);
+        if (!response.ok) throw Error('Did not receive expected data');
+        const listItems = await response.json();
+        setItems(listItems)
+        setFetchError(null)
+      } catch(err) {
+        console.log(err.message)
+        setFetchError(err.message)
+      } finally {
+        setIsLoading(false)
+      }
+    }
+  setTimeout(() => fetchItems(),2000)
+},[])
 const handleCheck = (id) => {
-  console.log(`Key ID : ${id}`)
   const listItems = items.map(
     (item) =>  item.id === id ? { ...item, checked: !item.checked }:item
   )
@@ -40,7 +38,6 @@ const handleCheck = (id) => {
 }
 
 const handleDelete = (id) => {
-  // console.log(id)
   const listItems = items.filter((item) => (item.id !== id))
   setItems(listItems)
 }
@@ -59,7 +56,7 @@ const handleSubmit = (e) => {
   setNewItem('')
 }
 
-  const [search, setSearch] = useState('')
+
 
   return (
     <div className='App'>
@@ -76,18 +73,21 @@ const handleSubmit = (e) => {
 
       />
 
-      <Content
-        items={items.filter(
-          item =>
-            (
-              (item.item).toLowerCase()
-            ).includes(search)
-        )}
-        setItems={setItems}
-        handleCheck={handleCheck}
-        handleDelete={handleDelete}
-
-      />
+    <main>
+      {isLoading && <p>Loading List....</p>}
+        {fetchError && <p style={{color:"yellowgreen"}}>{ `Error ${fetchError}`}</p>}
+        {!fetchError && !isLoading && <Content
+          items={items.filter(
+            (item) =>
+              (
+                (item.item).toLowerCase()
+              ).includes(search)
+          )}
+          setItems={setItems}
+          handleCheck={handleCheck}
+          handleDelete={handleDelete}
+        />}
+    </main>
 
       <Footer len={items.length} />
 
