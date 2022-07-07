@@ -4,14 +4,15 @@ const SearchItem = ({search,setSearch}) => {
   return (
       <form
           className='searchForm'
-          onSubmit={e => e.preventDefault()}
+      onSubmit={e => e.preventDefault()}
+      autoComplete="off"
       >
           <label htmlFor="search">Search</label>
           <input
               id="search"
               type="text"
               role="searchbox"
-              placeholder="Search Item"
+              placeholder="Search List"
               value={search}
               onChange={(e) => setSearch(e.target.value)}
           />

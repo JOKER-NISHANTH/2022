@@ -5,14 +5,14 @@ import {useRef} from "react"
 const AddItem = ({handleSubmit ,newItem,setNewItem}) => {
   const inputRef = useRef();
   return (
-      <form action="" className="addForm" onSubmit={handleSubmit}>
-          <label htmlFor="addItem">Add Item</label>
+      <form action="" className="addForm" onSubmit={handleSubmit} autoComplete="off">
+          <label htmlFor="addItem">Add List</label>
           <input
             type="text"
             autoFocus
             ref={inputRef}
             id="addItem"
-            placeholder='Add Item'
+            placeholder='Add List'
             required
             value={newItem}
         onChange={(e)=>setNewItem(e.target.value)}
