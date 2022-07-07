@@ -8,3 +8,16 @@ Prop Drilling
 
 Dev to Production
     npm i react-icons --save-prod
+
+ useEffect(() => {
+    console.log("load time")
+  },[])
+
+  Here [] is depenceince
+  wheneven the change made in depenceince its render the particular
+  component
+
+  Incase the depenceince not specificed then its run every time page requests
+  useEffect(() => {
+    console.log("render")
+  })
