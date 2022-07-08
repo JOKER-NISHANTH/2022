@@ -35,7 +35,7 @@ const About = () => {
                     <small>6+ Completed</small>
               </article>
           </div>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque nulla voluptatibus dolor commodi omnis pariatur? Ullam unde deserunt aperiam officiis ab consequatur iusto est! Quod qui facilis minus magni explicabo!</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;Since 14 years old, I Found interest in playing Video Games, I Loved Playing Video Games, so I was wondering why not learn how these things are built and made ? My Brother Had a Windows Vista at the time and I Always enjoyed playing games like GTA,NFS and etc. I didn't really focus on learning how computers work until the age of 20 I really got into these things I really struggled getting to the right track but I finally got into the right track and here I am always learning and dedicated to learning new things from ethical hacking and web development to how Computer systems are built. I am only following my passion since doing the things you love will lead to success and here I am , I always look at the positive side of things, which allows me to be more creative and solve problems. I Love working in a team, working in a team makes things more productive.<br></br> Lastly I always love giving back, I follow one rule which I created <b><i>Learn From Mistake</i></b>.</p>
           <a href="#contact" className="btn btn-primary">Let's Talk</a>
         </div>
       </div>
