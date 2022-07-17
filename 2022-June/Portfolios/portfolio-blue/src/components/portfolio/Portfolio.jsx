@@ -1,35 +1,35 @@
 import React from 'react'
 import "./Portfolio.css"
-import IMG1 from "../../assets/portfolio1.jpg"
-import IMG2 from "../../assets/portfolio2.jpg"
-import IMG3 from "../../assets/portfolio3.jpg"
-import IMG4 from "../../assets/portfolio4.jpg"
+import IMG1 from "../../assets/myPort.png"
+import IMG2 from "../../assets/todoJavaScript.png"
+import IMG3 from "../../assets/gameTie.png"
+import IMG4 from "../../assets/mycake.png"
 
 const data = [
   {
     id:1,
     image:IMG1,
-    title:"Demo Site 1",
-    github:"",
-    demo:"",
+    title:"Static Site Using HTML ,  CSS and JavaScript",
+    github:"https://github.com/mr-nishanth/portfolio",
+    demo:"https://mr-nishanth.github.io/portfolio",
   },{
     id:2,
     image:IMG2,
-    title:"Demo Site 2",
-    github:"",
-    demo:"",
+    title:"Todo Using JavaScript",
+    github:"https://github.com/mr-nishanth/todolistP1",
+    demo:"https://mr-nishanth.github.io/todolistP1/",
   },{
     id:3,
     image:IMG3,
-    title:"Demo Site 3",
-    github:"",
-    demo:"",
+    title:"Tic-tac-toe Game",
+    github:"https://github.com/mr-nishanth/Tic-tac-toe",
+    demo:"https://mr-nishanth.github.io/Tic-tac-toe/",
   },{
     id:4,
     image:IMG4,
-    title:"Demo Site 4",
-    github:"",
-    demo:"",
+    title:"Cake Landing Page",
+    github:"https://github.com/mr-nishanth/MyCake",
+    demo:"https://mr-nishanth.github.io/MyCake",
   },
 ]
 
