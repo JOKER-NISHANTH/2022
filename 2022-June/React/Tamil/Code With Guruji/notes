@@ -1,0 +1,8 @@
+
+Sourse Code  --> Interpreter ==> Byte Code --> Compiler ==> Machine code
+
+1st  spider monkey
+
+Chrome v8
+    2008
+    -   Sourse Code  --> Compiler --> Machine code
