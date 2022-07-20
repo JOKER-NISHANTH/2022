@@ -1,1 +1,4 @@
 https://babeljs.io/
+
+1. useEffect  is rendering after the complete component rendering
+2. Mostly used in API request
