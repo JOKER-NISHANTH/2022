@@ -1,3 +1,8 @@
 Box
 
 The Box component serves as a wrapper component for most of the CSS utility needs.
+
+Typography
+    variant is link h1,h2,h3... body etc
+    component is how the variant is render
+    gutterBottom is marginButtom
