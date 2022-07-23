@@ -1,18 +1,22 @@
 import React from 'react'
 import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
-import Typography from '@mui/material/Typography';
+import Stack from '@mui/material/Stack';
+import Divider from '@mui/material/Divider';
 
 const Dummy = () => {
   return (
-    <>
-      <Container maxWidth="md">
-        <Box sx={{
-          bgcolor: "red",
-          height:'100vh'
-        }} />
-      </Container>
-    </>
+    <Box sx={{ ml: 5 }}>
+      <Stack
+        direction="Row"
+        divider={<Divider orientation='vertical' flexItem />}
+        orientation="horizontal"
+        spacing={2}
+      >
+          <div>HEllo</div>
+          <div>World</div>
+      </Stack>
+    </Box>
   )
 }
 
