@@ -1,11 +1,10 @@
 import './App.css';
+import Dummy from './components/Dummy';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        Pink
-      </header>
+      <Dummy />
     </div>
   );
 }
