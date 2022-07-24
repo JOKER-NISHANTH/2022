@@ -1,0 +1,14 @@
+
+https://boxicons.com/
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+https://undraw.co/
+
+Animate On Scroll Library
+https://michalsnik.github.io/aos/
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
