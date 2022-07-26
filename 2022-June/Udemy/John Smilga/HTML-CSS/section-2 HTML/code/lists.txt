@@ -1,0 +1,38 @@
+<!-- ul Section -->
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+    <!-- Ordered list -->
+    <ol>
+        <li>Hello</li>
+        <li>World</li>
+        <li>Welcome</li>
+    </ol>
+
+        <!-- nested lists -->
+        <ul>
+            <li>
+                <ol>
+                    <li>q</li>
+                    <li>w</li>
+                    <li>d</li>
+                </ol>
+            </li>
+            <li>
+                <ol>
+                    <li>qw</li>
+                    <li>dq</li>
+                    <li>f2</li>
+                </ol>
+            </li>
+        </ul>
+
+        <dl>
+            <dt>Hello</dt>
+            <dd>sollu da black ena pandra</dd>
+            <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit repellat provident nam!</dd>
+            <dt>World</dt>
+            <dd>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus quae maiores eveniet consequatur nemo in recusandae saepe veritatis corrupti error.</dd>
+        </dl>
