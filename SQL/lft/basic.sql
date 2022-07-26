@@ -114,5 +114,5 @@ update logic_first.emp set job_desc="Analyst" WHERE job_desc="CEO";
 
 update emp set job_desc="CEO" WHERE job_desc="Analyst";
 
-delete from emp where id=12;
+delete from emp where empid=12;
 
