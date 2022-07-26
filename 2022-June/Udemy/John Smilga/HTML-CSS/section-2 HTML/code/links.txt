@@ -1,0 +1,19 @@
+
+
+    <!-- external link -->
+    <h2>external link</h2>
+    <a href="https://www.google.com" target="_blank" rel="noopener" >Navigate here</a>
+    <!-- interal link -->
+    <h2>interal link</h2>
+    <a href="about.html" target="" >About Page</a>
+    <!-- single page -->
+    <h2>single page</h2>
+    <a href="#logo">same page link</a>
+    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+    <img src="./assets/img/index.jpg" id="logo" alt="Udemy">
+
+    <!-- image link -->
+    <h2>Image as link</h2>
+    <a href="https://www.google.com" rel="noopener" target="_blank"><img src="./assets/img/index.jpg" id="logo" width="100" height="100" alt="Udemy"></a>
+    <!-- empty link -->
+    <a href="#">empty link</a>
