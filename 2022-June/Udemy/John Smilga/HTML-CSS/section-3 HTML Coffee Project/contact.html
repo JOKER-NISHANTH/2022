@@ -4,9 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>Contact page</title>
 </head>
 <body>
-    
+   <header id="top">
+     <nav>
+        <div>
+            <img src="./assets/img/logo.png" alt="Logo" />
+            <h1>Contact Page</h1>
+        </div>
+        <div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact US</a></li>
+                <li><a href="number.html">Number</a></li>
+            </ul>
+        </div>
+    </nav>
+   </header>
+    <!-- hero image -->
+    <main>
+        <div>
+            <img src="./assets/img/background.jpeg" alt="Background" width="100%"/>
+        </div>
+        <h2>Contact Us</h2>
+
+        <div>
+            <form action="" method="post">
+                <label for="name=">Name : </label>
+                <input type="text" name="username" id="name"> <br>
+                <label for="email=">Email : </label>
+                <input type="text" name="email" id="email"> <br>
+                <label for="description">Description</label><br>
+                <textarea name="description" id="description" placeholder="Your description" cols="15" rows="5"></textarea> <br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+    </main>
+
+    <footer id="buttom" style="margin-top:200px;">
+        <div>
+            All Copyright reserved &copy; 2022
+        </div>
+        <a href="#top">Top</a>
+    </footer>
 </body>
 </html>
