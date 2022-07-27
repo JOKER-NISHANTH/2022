@@ -1,0 +1,42 @@
+/* color and background */
+/* https://www.w3schools.com/tags/ref_colornames.asp */
+#f{
+    color: whitesmoke;
+    background-color:black;
+    /* display: inline; */
+    /* display: block; */
+}
+
+#s{
+    color: red;
+    /* if you specifies background shorthand property its take value as color or image */
+    background:yellowgreen;
+}
+
+/* RGB  */
+#thrid{
+    color: rgb(255, 0, 0);
+    background:rgb(0, 0, 0)
+}
+#fourth{
+    color: rgb(0, 21, 255);
+    background:rgb(0, 250, 30);
+}
+
+/* RGBA */
+#five{
+    /* color: rgba(red, green, blue, alpha);  alpha value b/t 0 - 1*/
+    color: rgba(255, 0, 0,1);
+}
+#six{
+color: rgba(255, 0, 0,0.75);
+}
+/* HEX */
+#seven{
+    color:#ff00ff;
+}
+#eight{
+    color: #00ff00;
+}
+
+/* https://coolors.co/ */
