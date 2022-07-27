@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    height: 8rem;
+    background: white;
+
+}
+nav li {
+    color: orangered;
+    font-size: 3rem;
+}
+.banner{
+    min-height: calc(100vh - 8rem);
+    background: darkolivegreen;
+    color: antiquewhite;
+}
+.banner h3{
+    color: orangered;
+    text-transform: uppercase;
+}
+.banner button{
+    background: rgba(255, 68, 0, 0.836);
+    border: none;
+    color: aliceblue;
+}
