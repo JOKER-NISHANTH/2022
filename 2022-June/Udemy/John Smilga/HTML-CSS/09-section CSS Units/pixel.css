@@ -1,0 +1,9 @@
+/* PIXELS is absolute value , one dot on the screen */
+
+h2 {
+  font-size: 60px;
+  background: blue;
+  color: white;
+  width: 1080px;
+  height: 400px;
+}

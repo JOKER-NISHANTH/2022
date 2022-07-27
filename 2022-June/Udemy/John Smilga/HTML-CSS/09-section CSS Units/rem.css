@@ -1,0 +1,21 @@
+/*
+    rem is RELATIVE Depends on ROOT
+
+    1rem = base value (16px) * number (1) = 16px
+    2rem = base value (16px) * number (2) = 32px
+
+    2rem = base value (40px) * number (2) = 80px
+ */
+ html{
+    font-size: 40px;
+ }
+
+ body{
+    font-size: 10px;
+ }
+ .absolute{
+    font-size: 32px;
+ }
+ .relative{
+    font-size: 2rem;
+ }

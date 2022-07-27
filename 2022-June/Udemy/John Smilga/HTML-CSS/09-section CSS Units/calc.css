@@ -1,0 +1,22 @@
+/*
+CALC function
+
+Perform Math Operation
+MIX and MATCH Values
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    background: blue;
+    height: 6rem;
+    color: #fff;
+    font-size: 3rem;
+}
+.banner{
+    background: red;
+    /* height: 100vh; */
+    height: calc(100vh - 6rem);
+}

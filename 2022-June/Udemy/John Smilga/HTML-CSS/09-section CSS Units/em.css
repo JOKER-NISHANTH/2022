@@ -1,0 +1,21 @@
+/*
+em - RELATIVE Depends on parent
+
+1em - 16px default browser style
+
+1em = base value (16px) * number (1) = 16px
+2em = base value (16px) * number (2) = 32px
+3em = base value (16px) * number (3) = 48px
+4em = base value (16px) * number (4) = 64px
+
+2em = base value (10px) * number (2) = 20px
+*/
+div{
+    font-size: 10px; /*base value parent for h3*/
+}
+.absolute{
+    font-size: 32px;
+}
+.relative{
+    font-size: 2em;
+}
