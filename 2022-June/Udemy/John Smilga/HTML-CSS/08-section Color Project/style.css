@@ -1,0 +1,16 @@
+body{
+    background: #e971b7;
+}
+.container {
+    background: #fff;
+}
+
+.container h2{
+    color: #0000ff;
+}
+p{
+    color: #64748b;
+}
+.special{
+    background:rgba(0, 0, 0, 0.9);
+}
