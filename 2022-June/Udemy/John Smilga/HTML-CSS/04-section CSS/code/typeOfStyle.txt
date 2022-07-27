@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Tutorial</title>
+
+</head>
+<body>
+
+    <h1>Section-4 CSS Tutorial</h1>
+    <!-- inline css -->
+    <h1 style="color: blue;font-size:100px;">Green</h1>
+    <!-- internal css-->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur autem repudiandae voluptas!</p>
+    <h2>
+        internal CSS
+    </h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique illo laboriosam natus ipsa ab quibusdam sapiente laborum nobis dolorem harum praesentium ut nulla voluptates cupiditate distinctio qui, hic et. Nulla.</p>
+
+    <a href="externalCss.html">External CSS</a>
+</body>
+</html>

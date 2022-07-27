@@ -1,0 +1,29 @@
+/* LastRule, Specificity amd Universal-Selector */
+
+/* LastRule */
+p{
+    color:red;
+}
+
+/* more code here */
+
+p{
+    color: green;
+}
+
+
+/* Specificity */
+/*
+     inline styles, IDs, classes, attributes, and elements.
+ */
+ #special{
+    background-color: aqua;
+ }
+ .special{
+background-color: blueviolet;
+ }
+
+ /* Universal-Selector has least amount of specificity */
+ *{
+    color: bisque;
+ }

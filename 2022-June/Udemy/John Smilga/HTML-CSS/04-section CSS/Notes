@@ -1,1 +1,13 @@
 2hrs
+
+// Power Struggle in CSS
+CSS follow last rule principle
+    placement is important
+
+
+What is the order of the CSS specificity rule?
+Specificity Rules include:
+
+CSS style applied by referencing external stylesheet has lowest precedence and is overridden by Internal and inline CSS. Internal CSS is overridden by inline CSS. Inline CSS has highest priority and overrides all other selectors
+
+    https://www.w3schools.com/css/css_specificity.asp

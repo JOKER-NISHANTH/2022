@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Tutorial</title>
+<link rel="stylesheet" href="selectors.css">
+</head>
+<body>
+
+    <h1>Section-4 CSS Tutorial</h1>
+    <!-- Element Selector -->
+    <h2>Element Selector</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem, ut. Veritatis odio magni, quis consequatur amet harum consequuntur enim unde impedit a et. Quasi repellendus consectetur qui quos adipisci libero!</p>
+
+    <!-- Group Selector -->
+    <h3>Group Selector</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor non maiores reprehenderit!</p>
+
+    <!-- ID Selector -->
+    <h1 id="head">ID Selector start</h1>
+    <h1 id="foot">ID Selector end</h1>
+
+    <!-- Class Selector -->
+    <h5>Class Selector</h5>
+    <h6 class="g">Green</h6>
+    <h6 class="r">Green</h6>
+    <h6 class="g">Green</h6>
+    <h6 class="r">Green</h6>
+</body>
+</html>

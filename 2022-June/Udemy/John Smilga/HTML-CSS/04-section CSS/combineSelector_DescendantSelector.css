@@ -1,0 +1,9 @@
+/* Combine Selectors */
+.container p {
+  background-color: bisque;
+}
+
+.container #subT {
+  color: rebeccapurple;
+  text-align: center;
+}

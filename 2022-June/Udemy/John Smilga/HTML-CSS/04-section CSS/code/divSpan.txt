@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Tutorial</title>
+<link rel="stylesheet" href="divSpan.css">
+</head>
+<body>
+
+    <h1>Section-4 CSS Tutorial</h1>
+  <div class="red">
+    <h3>Heading Number One</h3>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem ut quas quasi!</p>
+  </div>
+  <div class="green">
+    <h3>Heading Number two</h3>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem ut quas quasi!</p>
+  </div>
+  <div class="">
+    <h3>Heading Number two</h3>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem ut quas quasi!</p>
+  </div>
+
+  <div>
+    <h2>learn span </h2>
+    <p>Lorem ipsum dolor sit <span>Mr Black</span> amet consectetur adipisicing elit. Explicabo, cum neque? Dolores debitis velit ipsam ratione sapiente voluptas dolorum deserunt libero, illum quae similique, quas esse totam repudiandae cum quam?</p>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+/* element selector */
+h1{
+    color: blueviolet;
+}
+h2{
+    color: greenyellow;
+}
+p{
+    color: pink;
+}
+
+/* Group selector */
+h3,p{
+    color: red;
+}
+
+/* ID Selector */
+#head , #foot{
+    background-color: yellow;
+}
+
+/* Class Selector */
+.g{
+    color:goldenrod;
+    font-size: 50px;
+}
+.r{
+    color:red;
+    font-size: 50px;
+}

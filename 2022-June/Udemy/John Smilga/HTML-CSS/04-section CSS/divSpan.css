@@ -1,0 +1,19 @@
+/* div and span are using for grouping */
+/* DIV used a grouping multiple element */
+/* SPAN used to grouping inline element */
+div {
+  color: wheat;
+  background-color: blue;
+}
+.red {
+  background-color: red;
+}
+.green {
+  background-color: green;
+}
+
+span {
+  text-transform: uppercase;
+  font-size: 50px;
+  color: #000;
+}

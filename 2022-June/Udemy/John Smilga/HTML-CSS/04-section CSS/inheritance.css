@@ -1,0 +1,20 @@
+/* Inheritance
+    children inherit styles from he parent , unless have their own styles
+ */
+
+ body{
+    border: 18px solid salmon;
+    color: blue;
+ }
+ p:nth-of-type(1){
+    padding: 10px;
+    color: #000;
+ }
+ h2{
+    color: greenyellow;
+ }
+ div{
+    color:aqua;
+ }
+
+ /* Note:- Border is not inherit  */
