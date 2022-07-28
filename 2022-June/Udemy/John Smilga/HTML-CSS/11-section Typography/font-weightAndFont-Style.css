@@ -1,0 +1,37 @@
+/*
+font-weight how think or thin character in text should be
+
+font-style sets font style for a text
+*/
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.main-heading {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.sub-heading{
+    font-style: italic;
+}
+
+.one {
+  font-weight: bold;
+}
+.two {
+  font-weight: lighter;
+  font-style: oblique;
+}
+
+/* Text-align . text-indent */
+
+body{
+
+    text-align: center;
+    text-align: right;
+}
+
+p{
+       text-align: left;
+    text-indent: 50px;
+}
