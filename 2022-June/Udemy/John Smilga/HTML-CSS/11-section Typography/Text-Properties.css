@@ -1,0 +1,35 @@
+/*
+    line-height - if number  * by font-size
+    letter-spacing
+    word-spacing
+    text-transform
+    text-decoration
+*/
+
+body{
+    line-height: 30px;
+    line-height: 60px;
+    line-height: 2; /* if specifies the number its relative to font size (number * font size) */
+}
+
+a{
+    font-size: 3rem;
+    text-decoration: none;
+}
+
+h1{
+    font-size: 40px;
+    text-decoration: overline;
+}
+
+.one{
+    letter-spacing: 0.2rem;
+    line-height: 2rem;
+    text-decoration: underline;
+}
+.two{
+    word-spacing: 1rem;
+}
+.three{
+    text-transform: uppercase;
+}
