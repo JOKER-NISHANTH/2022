@@ -1,0 +1,19 @@
+
+h1,p{
+    color: wheat;
+}
+
+h1{
+    background: red;
+    padding-top: 2.5rem;
+    padding-right: 2rem;
+    padding-bottom: 1.5rem;
+    padding-left: 1rem;
+
+}
+p{
+    background: blue;
+    padding: 3rem;
+    padding: 3rem 6rem;
+    padding: 3rem 6rem 4rem 7rem;
+}

@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+}
+body{
+    background: rgb(47, 255, 193);
+}
+h1,p{
+    color: wheat;
+}
+
+h1{
+    background: #ff3c00e5;
+    padding: 1.2rem;
+    margin: 2rem;
+    border-width: 2px;
+    border-color: black;
+    border-style:solid;
+
+
+
+}
+p{
+    background: blue;
+    padding: 2rem;
+    margin-top: 3rem;
+    /* border: 0.3rem groove red;=*/
+    border-bottom: 0.3rem groove red;
+}

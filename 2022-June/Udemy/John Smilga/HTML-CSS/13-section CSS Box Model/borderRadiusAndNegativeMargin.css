@@ -1,0 +1,33 @@
+h1,p{
+    color: burlywood;
+}
+body{
+    background: khaki;
+}
+h1{
+    background: red;
+    padding: 0.8rem;
+    margin: 3rem;
+    border: 0.2rem solid black;
+    border-radius: 1rem;
+}
+p{
+    background: blueviolet;
+    padding: 1rem;
+    border: 0.4rem dashed gainsboro;
+}
+
+/* Negative Margins */
+h1{
+    background: red;
+    padding: 0.8rem;
+    margin: 3rem;
+    border: 0.2rem solid black;
+    border-radius: 1rem;
+}
+p{
+    background: blueviolet;
+    padding: 1rem;
+    border: 0.4rem dashed gainsboro;
+    margin-top: -8rem;
+}

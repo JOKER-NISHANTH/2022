@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+}
+body{
+    background: greenyellow;
+}
+h1,p{
+    color: wheat;
+}
+
+h1{
+    background: red;
+    padding: 1.2rem;
+    margin: 2rem;
+    margin: 2rem 2rem 0 2rem;
+
+}
+p{
+    background: blue;
+        padding: 2rem;
+    margin-top: 3rem;
+}
