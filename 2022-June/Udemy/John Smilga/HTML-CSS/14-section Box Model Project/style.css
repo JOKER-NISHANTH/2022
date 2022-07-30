@@ -1,0 +1,64 @@
+:root {
+  --light-grey: #f1f5f9;
+  --white: #fff;
+  --light-pink: #ffe8f1;
+  --dark-pink: #ff69a6;
+  --light-blue: #ecf4ff;
+  --dark-blue: #68a3ff;
+}
+
+body {
+  background: var(--light-grey);
+}
+.card {
+
+  background: var(--white);
+  padding: 1.5rem 2rem;
+  text-align: center;
+  max-width: 300px;
+  margin: 3rem auto;
+  border-radius: 0.5rem;
+  border: 0.1rem solid transparent;
+}
+.card-1{
+    border-color: var(--dark-pink);
+}
+.card-2{
+    border-color: var(--dark-blue);
+}
+
+.icon{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.card-1 .icon {
+    background: var(--dark-pink);
+}
+.card-2 .icon {
+    background: var(--dark-blue);
+}
+.title{
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+.text{
+    line-height: 1.5;
+    color: #64748b;
+}
+.btn{
+    text-transform: capitalize;
+    border: transparent;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    letter-spacing: 2px;
+}
+.btn-pink{
+    background: #ffe8f1;
+    color: #ff69a6;
+}
+.btn-blue{
+    background: #ecf4ff;
+    color: #68a3ff;
+}
