@@ -1,1 +1,7 @@
 1hrs
+
+*{
+    border:0.2rem solid red ;
+}
+
+Above code is used to debug the layout easily
