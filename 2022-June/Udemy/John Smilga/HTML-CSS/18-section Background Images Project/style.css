@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+    /* border: 2px solid purple; */
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.5;
+}
+
+.nav{
+height: 5rem;
+background: #222;
+padding: 1rem 0;
+}
+.nav-title{
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 0.1rem;
+}
+
+.nav-center{
+    width: 90vw;
+    max-width: 1170px;
+    margin: 0 auto;
+    /* border: 2px solid greenyellow; */
+}
+.hero{
+    min-height: calc(100vh - 5rem);
+    background: linear-gradient(
+        to right ,
+         rgba(105,62,27,0.5),
+         rgba(105,62,27,1)
+         ),
+         url(./hero-bcg.jpg) center/cover fixed no-repeat;
+}
+.hero-center{
+    /* border: 1px solid pink; */
+    width: 90vw;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 5rem 0;
+    color:#fff;
+}
+.hero-center h1{
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    margin-bottom: 0.75rem;
+}
+.hero-btn{
+    background: transparent;
+    text-transform: uppercase;
+    border: 1px solid #fff;
+    padding: 0.75rem 1.2rem;
+    color:#fff;
+    letter-spacing: 2px;
+}
+.hero-center p{
+    max-width: 35em;
+    margin-bottom: 2rem;
+}
