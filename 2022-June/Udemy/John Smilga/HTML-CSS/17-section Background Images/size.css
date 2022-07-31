@@ -7,19 +7,18 @@ div {
   border: 0.4px solid red;
 }
 
-.big-img{
-    background: url(./big.jpeg);
-     background-repeat: no-repeat;
-     background-size: cover;
+.big-img {
+  background: url(./big.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.small-img{
-    background: url(./small.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-
+.small-img {
+  background: url(./small.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.folder-img{
-    background: url(./images/folder-img.jpeg);
-    background-repeat: no-repeat;
-    background-size: contain;
+.folder-img {
+  background: url(./images/folder-img.jpeg);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
