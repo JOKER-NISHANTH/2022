@@ -1,0 +1,23 @@
+/*
+    Basic Selector
+*/
+
+*{
+    margin: 0;
+    color: rebeccapurple;
+}
+#heading{
+    font-size: 40px;
+    text-transform: uppercase;
+    color: red;
+}
+
+.heading{
+    font-size: 20px;
+    text-transform: lowercase;
+    color: green;
+}
+
+p{
+    letter-spacing: 5px;
+}
