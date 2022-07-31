@@ -1,0 +1,19 @@
+/*
+    display:inline-block
+
+    -> Does not start a new line
+
+    -> Browser respects margin,width and height
+*/
+
+a {
+  font-family: 1.5rem;
+  background: red;
+
+  width: 2.1rem;
+  height: 2.1rem;
+  margin: 2.1rem 0.6rem;
+
+  display: block;
+  display: inline-block;
+}

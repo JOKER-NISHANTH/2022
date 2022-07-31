@@ -1,0 +1,23 @@
+/* horizontal center */
+
+.block{
+    background: blue;
+    color: wheat;
+}
+.inline{
+    background: red;
+    color: wheat;
+}
+
+/* center  inline element */
+body{
+    text-align: center;
+}
+
+/* center block element */
+.block{
+    background: blue;
+    color: wheat;
+    width: 300px;
+    margin: 1rem auto;
+}

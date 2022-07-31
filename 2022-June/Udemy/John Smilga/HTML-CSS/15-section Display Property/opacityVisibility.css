@@ -1,0 +1,32 @@
+/*
+    display:none - remove from the flow , hide element collapse the space
+        -> Not take the space
+
+    opacity:0,visibility:hidden - hide element preserves the space
+        -> Take the space
+*/
+
+div{
+    background: orangered;
+    margin: 0.6rem;
+    color: aliceblue;
+    font-size: 1.3rem;
+}
+
+.none{
+    display: none;
+}
+
+.opacity-1{
+    opacity: 1;
+}
+.opacity-05{
+    opacity: 0.5;
+}
+.opacity-0{
+    opacity: 0;
+}
+.visibility{
+    visibility: visible;
+    visibility: hidden;
+}

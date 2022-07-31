@@ -1,0 +1,36 @@
+/*
+    Block : browser respect width/height , top/button margin
+    Inline : browser does not respect width/height, top/button margin
+
+    Navbar
+    list-style-type
+
+    descendant selectors
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* descendant selectors */
+ul li{
+    list-style-type: none;
+}
+
+/* a tag is default inline */
+ul li a {
+    display: block;
+    text-decoration: none;
+    color: orange;
+    letter-spacing: 2px;
+    background: #222;
+    padding: 0.3rem;
+    margin: 10px 10px;
+}
+

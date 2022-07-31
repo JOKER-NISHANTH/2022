@@ -1,0 +1,22 @@
+/*
+Elements have it set by default
+    Block : Always starts a new line and space full width
+    Inline : Does not start a new line and spans only content
+*/
+
+.block{
+    background: blue;
+    color: #fff;
+
+    /* changing the default property */
+    /* display: inline; */
+
+}
+.inline{
+    background: red;
+    color: #fff;
+    display: inline;
+
+    /* changing the default property */
+    display: block;
+}
