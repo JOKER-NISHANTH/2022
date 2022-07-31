@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+div {
+  height: 200px;
+
+  float: left;
+
+  /* 2 column layout */
+  width: calc(100% / 2);
+  /* 3 column layout */
+  /* width: 33.33%; 100 divide 3 */
+  width: calc(100% / 3);
+  /* 4 column layout */
+  width: calc(100% / 4);
+
+
+}
+
+.one {
+  background: red;
+}
+.two {
+  background: green;
+}
+.three {
+  background: blue;
+}
+.four {
+  background: purple;
+}
+
+h1{
+    clear: both;
+}
