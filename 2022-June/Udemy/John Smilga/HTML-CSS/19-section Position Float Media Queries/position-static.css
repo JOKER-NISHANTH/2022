@@ -1,0 +1,16 @@
+div{
+    border: 3px solid ;
+    padding: 1rem;
+    background: yellow;
+    margin-top: 2.5rem;
+}
+.one{
+    background: blue;
+}
+.two{
+    background: green;
+}
+.special{
+    background: red;
+}
+/* default position static */
