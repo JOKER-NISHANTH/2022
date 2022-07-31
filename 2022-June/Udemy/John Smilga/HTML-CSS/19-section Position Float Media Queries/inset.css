@@ -1,0 +1,64 @@
+/*
+    The inset CSS property is a shorthand that corresponds to the top , right , bottom , left properties
+*/
+
+*{
+    margin: 0;
+}
+
+.box{
+    border: 2px solid;
+    width: 300px;
+    height: 300px;
+    background: orangered;
+    margin-bottom: 1rem;
+}
+
+.special{
+    position: relative;
+}
+
+.special h1{
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    color: #fff;
+}
+
+.special h1{
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    color: #fff;
+
+}
+.special h1{
+    position: absolute;
+
+    inset: 0;
+    inset: 10px 20px 30px 40px;
+    /* inset: 0; */
+
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    color: #fff;
+
+}
+
+/*
+    inset 0
+
+    equal to
+
+     top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+*/
