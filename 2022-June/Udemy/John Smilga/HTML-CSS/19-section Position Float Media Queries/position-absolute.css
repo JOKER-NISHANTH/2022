@@ -1,0 +1,37 @@
+/*
+    position:static -> default , Always positioned according to the normal flow
+
+    position: relative -> position relative to it's normal position.
+            top bottom left right
+
+    position:absolute
+        1 -> relative to the parent with position:relative
+
+    position:fixed - relative to viewport(screen) stays as we are scrolling
+
+        will use other content to fill out the space
+*/
+
+div{
+    border: 3px solid ;
+    padding: 1rem;
+    background: yellow;
+    margin-top: 2.5rem;
+}
+.one{
+    background: blue;
+}
+.two{
+    background: green;
+
+    /* immediate parent */
+    position: relative;
+
+}
+.special{
+    background: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
