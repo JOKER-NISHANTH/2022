@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+}
+div {
+  width: 150px;
+  height: 150px;
+  display: inline-block;
+}
+
+.one {
+  background: red;
+  transform: rotate(-100deg);
+  transform: rotateZ(100deg);
+}
+.two {
+  background: blue;
+  transform: rotate(100deg);
+}
+.three {
+  background: green;
+
+  transform: rotateX(90deg);
+  transform: rotateY(90deg);
+}
