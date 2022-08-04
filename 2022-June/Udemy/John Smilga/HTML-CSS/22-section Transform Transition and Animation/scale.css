@@ -1,0 +1,25 @@
+/*
+scale is used to increase the element size in x axis or y axis  */
+* {
+  margin: 0;
+}
+div {
+  width: 150px;
+  height: 150px;
+  display: inline-block;
+}
+.one {
+  background: red;
+  transform: scaleX(2);
+  transform: scaleX(0.5);
+}
+.two {
+  background: blue;
+  transform: scaleY(2);
+  transform: scaleY(0.5);
+}
+.three {
+  background: green;
+  transform: scale(1.2,1.5);
+  transform: scale(2);
+}
