@@ -1,0 +1,48 @@
+/*
+    animation-fill-mode : what values are applied by the animation outside the time it is executing
+
+*/
+
+/*
+    transform 0 = 100%
+    from start state to end state
+
+    ANIMATION 0  1% 2% ... 100%
+    multiple states
+*/
+
+div {
+  width: 200px;
+  height: 100px;
+  color: wheat;
+  border: 2px solid;
+  margin: 5px;
+  opacity: 0;
+}
+
+
+.animation{
+    background: purple;
+    animation: move 5s;
+    animation-fill-mode: forwards;
+ }
+@keyframes move {
+    0%{
+opacity: 0.1;
+    }
+    25%{
+    transform: translateX(200px);
+    opacity: 0.25;
+    }
+    50%{
+    transform: translateX(-100px);
+    opacity: 0.5;
+    }
+    75%{
+opacity: 0.75;
+    }
+    100%{
+        transform: translateX(200px);
+opacity: 1;
+    }
+}
