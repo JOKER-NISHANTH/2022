@@ -139,7 +139,30 @@ p {
   clear: both;
   display: table;
 }
+.section-title h3 {
+  font-family: var(--ff-secondary);
+  color: var(--clr-primary);
+}
+.section-title {
+  margin-bottom: 2rem;
+}
+.section-center {
+  padding: 4rem 0;
+  width: 85vw;
 
+  /* section container always 85vw and center */
+  margin: 0 auto;
+  max-width: 1170px;
+
+  /* background: red; */
+}
+
+@media screen and (min-width: 992px) {
+  .section-center {
+    width: 95vw;
+    padding: 4rem 1rem;
+  }
+}
 /*
 ======================================
             Header Style
@@ -255,6 +278,43 @@ p {
               About
 ======================================
 */
+.about-img,
+.about-info {
+  padding: 2rem 0;
+}
+.about-picture-container {
+  /* background: red; */
+
+  background: var(--clr-primary);
+  border: 0.5rem solid var(--clr-primary);
+  max-width: 30rem;
+
+  /* extra stuff */
+  overflow: hidden;
+}
+.about-picture {
+  transition: var(--transition);
+}
+.about-picture-container:hover .about-picture {
+  /* opacity: 1; default */
+  opacity: 0.5;
+  transform: scale(1.2);
+}
+.about-text {
+  max-width: 26rem;
+  color: var(--clr-grey-5);
+}
+
+@media screen and (min-width: 992px) {
+  .about-img,
+  .about-info {
+    float: left;
+    width: calc(100% - 2);
+  }
+  .about-info {
+    padding-left: 4rem;
+  }
+}
 
 /*
 ======================================
