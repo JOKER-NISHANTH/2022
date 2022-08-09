@@ -182,13 +182,63 @@ p {
   height: 0.5rem;
   background: linear-gradient(
     to left,
-     var(--clr-primary),
-     #e9b949,
-     var(--clr-primary)
-     );
+    var(--clr-primary),
+    #e9b949,
+    var(--clr-primary)
+  );
 }
 /*
 ======================================
+            Skill
+======================================
+*/
 
+.skills {
+  background: var(--clr-grey-10);
+}
+.skill {
+  /* border: 0.5rem solid ; */
+  padding: 2.5rem 0;
+  text-align: center;
+  transition: var(--transition);
+}
+.skill-icon {
+  /* span is inline-block element so convert block then only the margin work_img  */
+  /* border: 0.5rem solid; */
+  display: inline-block;
+  font-size: 2.5rem;
+  margin-bottom: 1.25rem;
+  transition: var(--transition);
+  color: var(--clr-primary);
+}
+
+.skill-text {
+  color: var(--clr-grey-5);
+  max-width: 17rem;
+  /* center the p */
+  margin: 0 auto;
+}
+
+.skill:hover{
+  background: var(--clr-white);
+  box-shadow: 0 2px var(--clr-primary);
+}
+.skill:hover .skill-icon{
+  /* up y axis 5px */
+  transform: translateY(-5px)
+}
+/*
+======================================
+            Skill
+======================================
+*/
+/*
+======================================
+            Skill
+======================================
+*/
+/*
+======================================
+            Skill
 ======================================
 */
