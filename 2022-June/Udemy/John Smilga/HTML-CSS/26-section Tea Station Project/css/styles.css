@@ -113,7 +113,7 @@ p {
   }
 }
 /* More Global  Style */
-.btn{
+.btn {
   text-transform: uppercase;
   background: var(--clr-primary);
   color: var(--clr-white);
@@ -121,14 +121,14 @@ p {
   letter-spacing: var(--spacing);
   display: inline-block;
   font-weight: 700;
-  transition:var(--transition);
+  transition: var(--transition);
   font-size: 1rem;
-  border:none;
+  border: none;
   cursor: pointer;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 
-.btn:hover{
+.btn:hover {
   color: var(--clr-primary);
   background: var(--clr-primary-light);
 }
@@ -159,16 +159,15 @@ p {
   font-family: var(--ff-secondary);
   color: var(--clr-primary);
   /* animation */
-
 }
-.banner h1{
-    color: var(--clr-white);
-    text-transform: uppercase;
-    margin-top: 1.25rem;
-    margin-bottom: 2rem;
-    /* animation */
+.banner h1 {
+  color: var(--clr-white);
+  text-transform: uppercase;
+  margin-top: 1.25rem;
+  margin-bottom: 2rem;
+  /* animation */
 }
-.banner-btn{
+.banner-btn {
   outline: 0.125rem solid var(--clr-primary);
   outline-offset: 0.25rem;
   font-size: 1.25rem;
@@ -176,10 +175,18 @@ p {
 }
 /*
 ======================================
-
+        Content Divider
 ======================================
 */
-
+.content-divider {
+  height: 0.5rem;
+  background: linear-gradient(
+    to left,
+     var(--clr-primary),
+     #e9b949,
+     var(--clr-primary)
+     );
+}
 /*
 ======================================
 
