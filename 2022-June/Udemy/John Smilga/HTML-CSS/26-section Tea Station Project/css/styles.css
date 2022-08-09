@@ -132,6 +132,14 @@ p {
   color: var(--clr-primary);
   background: var(--clr-primary-light);
 }
+
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 /*
 ======================================
             Header Style
@@ -219,14 +227,29 @@ p {
   margin: 0 auto;
 }
 
-.skill:hover{
+.skill:hover {
   background: var(--clr-white);
   box-shadow: 0 2px var(--clr-primary);
 }
-.skill:hover .skill-icon{
+.skill:hover .skill-icon {
   /* up y axis 5px */
-  transform: translateY(-5px)
+  transform: translateY(-5px);
 }
+
+@media screen and (min-width: 576px) {
+  .skill {
+    float: left;
+    /* 2 column */
+    width: calc(100% / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .skill {
+    /* 4 column */
+    width: calc(100% / 4);
+  }
+}
+
 /*
 ======================================
             Skill
