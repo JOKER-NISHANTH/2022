@@ -550,3 +550,18 @@ p {
 .company {
   color: var(--clr-primary);
 }
+/*
+======================================
+            Navbar
+======================================
+*/
+.nav-btn {
+  position: fixed;
+  top: 5%;
+  left: 5%;
+  color: var(--clr-primary);
+  font-size: 2.5rem;
+  z-index: 99;
+  cursor: pointer;
+  /* animation */
+}
