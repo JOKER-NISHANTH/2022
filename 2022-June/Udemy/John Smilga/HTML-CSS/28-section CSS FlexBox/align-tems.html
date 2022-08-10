@@ -7,8 +7,24 @@
     <title>FlexBox</title>
     <link rel="stylesheet" href="style.css" />
     <style>
+          /*
+            align-items -> vertical alignment
+
+            stretch(default) ,flex-start, flex-end,center,baseline
+          */
+          .box-1{font-size: 50px;}
         .container{
+          height: 50vh;
             display: flex;
+
+            align-items: stretch;
+            align-items: flex-start;
+            align-items: flex-end;
+
+            align-items: baseline;
+
+            align-items: center;
+            justify-content: center;
         }
     </style>
   </head>
