@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FlexBox</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /*
+        justify-content -> horizontal alignment
+        flex-start(default) flex-end
+
+        evenly distributed
+        space-between first item start of container , last item end of container
+        space-around side margin
+        space-evenly even margins
+        */
+        .container{
+            display: flex;
+            /**/
+            justify-content: flex-start;
+            justify-content: flex-end;
+            justify-content: space-between;
+        }
+    </style>
+  </head>
+  <body>
+    <!-- parent = flex-container -->
+    <div class="container">
+      <!-- children = flex-items -->
+      <div class="box box-1">1</div>
+      <div class="box box-2">2</div>
+      <div class="box box-3">3</div>
+      <div class="box box-4">4</div>
+      <div class="box box-5">5</div>
+    </div>
+
+  </body>
+</html>
