@@ -29,12 +29,9 @@ body{
 a{
     text-decoration: none;
     text-transform: uppercase;
-    margin-bottom: 50px;
     padding: 10px;
 }
-br{
-    margin-bottom: 50px;
-}
+
 .generice{
     background: blueviolet;
 }
