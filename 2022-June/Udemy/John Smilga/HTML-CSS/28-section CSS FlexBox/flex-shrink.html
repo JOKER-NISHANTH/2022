@@ -7,8 +7,16 @@
     <title>FlexBox</title>
     <link rel="stylesheet" href="style.css" />
     <style>
+      /*
+        flex-shrink  all children have flex-shrink : 1
+      */
         .container{
             display: flex;
+            flex-wrap: wrap;
+        }
+        .box-2{
+          width: 300px;
+          flex-shrink: 0;
         }
     </style>
   </head>
