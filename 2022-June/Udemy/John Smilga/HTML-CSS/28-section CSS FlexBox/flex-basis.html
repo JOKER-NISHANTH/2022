@@ -7,9 +7,30 @@
     <title>FlexBox</title>
     <link rel="stylesheet" href="style.css" />
     <style>
+      /* flex-basis base value and flex shortcut */
         .container{
             display: flex;
+            flex-wrap: wrap;
+
+            justify-content:space-between;
         }
+        .box{
+          /*flex-basis: 150px;*/
+          /*flex: flex-grow flex-shrink flex-basis */
+
+          /* flex: 1 0 200px; */
+          /* 4 column layout*/
+          padding:30px 0;
+          flex: 0 0 calc(100% / 4);
+          /* specially setup column in flexbox , not advice to set padding all around [padding 30px 0] */
+
+          /*
+          margin  [control margin via  parent using justify-content]
+          */
+          flex: 0 0 calc((100% / 4) - 1rem);
+
+        }
+
     </style>
   </head>
   <body>
@@ -20,7 +41,6 @@
       <div class="box box-2">2</div>
       <div class="box box-3">3</div>
       <div class="box box-4">4</div>
-      <div class="box box-5">5</div>
     </div>
 
   </body>
