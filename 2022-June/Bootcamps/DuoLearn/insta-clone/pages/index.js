@@ -1,8 +1,8 @@
-import {useState} from "react"
+import { Button, ButtonGroup } from "@chakra-ui/react";
 export default function Home() {
-  const [first, setfirst] = useState(0)
   return (
     <>
-    </>
+  <Button colorScheme='blue'>Button</Button>
+  </>
   )
 }
