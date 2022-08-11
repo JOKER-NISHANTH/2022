@@ -12,6 +12,7 @@ const fontWeights = {
   bold: 700,
   extraBold: 900,
 };
+
 const fontSizes = {
   xs: "12px",
   sm: "14px",
