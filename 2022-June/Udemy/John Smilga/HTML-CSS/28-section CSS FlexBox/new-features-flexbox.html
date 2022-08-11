@@ -7,21 +7,75 @@
     <title>FlexBox</title>
     <link rel="stylesheet" href="style.css" />
     <style>
-        .container{
-            display: flex;
-        }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      h2 {
+        margin-bottom: 0;
+        color: #645cff;
+        text-transform: uppercase;
+      }
+      nav {
+        height: 5rem;
+        padding: 0 2rem;
+        background: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .nav-links {
+        display: flex;
+        /* gap: row column; */
+        gap: 0 0.5rem;
+      }
+      .nav-link {
+        text-transform: capitalize;
+        color: #222;
+        font-size: 1.25rem;
+      }
+      ul {
+        list-style-type: none;
+      }
+
+
+      /*Container*/
+      .container {
+        border:5px solid #7b887b;
+        margin: 3rem;
+      }
+      .box{
+        width: 125px;
+        height: 125px;
+      }
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+
+        gap: 1rem 2rem;
+      }
+
+
     </style>
   </head>
   <body>
-    <!-- parent = flex-container -->
-    <div class="container">
-      <!-- children = flex-items -->
+    <!-- nav>h2{Logo}>ul.nav-links>(li>a.nav-link)*3 -->
+    <nav>
+      <h2>Logo</h2>
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">about</a></li>
+        <li><a href="#contact" class="nav-link">contact</a></li>
+      </ul>
+    </nav>
+
+      <div class="container">
       <div class="box box-1">1</div>
       <div class="box box-2">2</div>
       <div class="box box-3">3</div>
       <div class="box box-4">4</div>
-      <div class="box box-5">5</div>
-    </div>
-
+      </div>
   </body>
 </html>
