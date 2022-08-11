@@ -8,11 +8,34 @@
     <link rel="stylesheet" href="style.css" />
     <style>
         .container{
-            display: flex;
+          height: 40vh;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .container-1{
+          border: 5px solid red;
+          margin-top: 10px;
+          height: 90vh;
+          display: flex;
+          flex-direction: column;
+
+          align-items: center;
+          justify-content: center;
         }
     </style>
   </head>
   <body>
+    <!--
+      In Flexbox row (default)
+        main axis is horizontal
+        cross axis is vertical
+
+     In Flexbox column
+        main axis is vertical
+        cross axis is horizontal
+
+     -->
     <!-- parent = flex-container -->
     <div class="container">
       <!-- children = flex-items -->
@@ -23,5 +46,13 @@
       <div class="box box-5">5</div>
     </div>
 
+    <div class="container-1">
+      <div class="box box-1">1</div>
+      <div class="box box-2">2</div>
+      <div class="box box-3">3</div>
+      <div class="box box-4">4</div>
+      <div class="box box-5">5</div>
+
+    </div>
   </body>
 </html>
