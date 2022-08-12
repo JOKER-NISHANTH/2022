@@ -482,7 +482,54 @@ Contact
 Gallery
 ===============
 */
+.gallery-img-container{
+  position: relative;
+  background: var(--clr-primary-5);
+}
+.gallery-icon{
+  position: absolute;
+  font-size: 2rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: var(--clr-white);
+  /* hide the search icon */
+  opacity: 0;
+  cursor: none;
+  transition: var(--transition);
+}
+.gallery-img{
+  height: 17rem;
+  object-fit: cover;
+  transition: var(--transition);
+}
 
+/* green background shade*/
+.gallery-img-container:hover .gallery-img{
+    opacity: 0.5;
+}
+.gallery-img-container:hover .gallery-icon{
+  /* unhidden the search icon */
+  opacity: 1;
+}
+
+/* 2 col layout */
+@media screen and (min-width:768px) {
+  .gallery-center{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .gallery-img-container{
+    flex:0 0 calc(100% / 2);
+  }
+}
+
+/* 4 col layout */
+@media screen and (min-width:992px){
+  .gallery-img-container{
+    flex: 0 0 calc(100% / 4);
+  }
+}
 /*
 ===============
 Footer
