@@ -30,6 +30,7 @@ body {
   color: var(--clr-mainBlack);
   background-color: var(--clr-mainWhite);
   line-height: 1.5;
+  /* overflow: hidden; */
 }
 a {
   text-decoration: none;
@@ -139,15 +140,80 @@ Hero project
 }
 @media screen and (min-width: 768px) {
   .hero-header {
-    background: linear-gradient(rgba(241,80,37,0.75),rgba(0,0,0,0.5)),
+    background: linear-gradient(rgba(241, 80, 37, 0.75), rgba(0, 0, 0, 0.5)),
       url("./images/image-2.jpeg") center/cover no-repeat fixed;
   }
 }
 /*
 ==============
-Global Styles
+Card Product
 ==============
 */
+.title {
+  text-align: center;
+}
+.cards {
+  padding: 4rem 0;
+  border: 1px solid greenyellow;
+}
+.cards-center {
+  width: 80vw;
+  max-width: 1170px;
+  margin: 2rem auto;
+}
+.card {
+  border: 1px solid var(--clr-darkGray);
+  margin-bottom: 3rem;
+}
+.card-info {
+  padding: 1rem;
+}
+.card-footer {
+  background: var(--clr-darkGray);
+  padding: 0.5rem 1rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+}
+.card-footer span {
+  color: var(--clr-primaryColor);
+}
+.card img {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* @media screen and (min-width: 768px) {
+  .cards-center {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 3rem;
+  }
+}
+@media screen and (min-width: 1170px) {
+  .cards-center {
+        grid-template-columns: repeat(3, 1fr);
+  }
+} */
+
+/* --------------------------------------------- */
+/*
+
+  1rem - 16px , 2rem - 32px ; column-gap: 2rem ,(16px * 2rem) * 2
+
+  step 1 : remember max-width: 1170px [1170 - 64 / 3] = each column [368]  [max-width - gap / noOfLayout]
+  step 2 : ensure the gap between card
+*/
+
+.cards-center {
+  display: grid;
+  column-gap: 2rem;
+  /* 3 column layout */
+  /* grid-template-columns: repeat(auto-fill, minmax(360px, 1fr)); */
+   /* 4 column layout */
+  grid-template-columns: repeat(auto-fill, minmax(268.5px, 1fr));
+}
+
 /*
 ==============
 Global Styles
