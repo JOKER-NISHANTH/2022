@@ -10,24 +10,31 @@
       .container {
         display: grid;
         min-height: 100vh;
-        margin: 7rem;
-        /* gap */
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
 
-        grid-template-columns: [start] 1fr 1fr 1fr[end];
-        grid-template-rows: [start] 1fr 1fr 1fr[end];
-        gap: 4rem;
+        /*
+          align-item , justify-item -- content with items
+          justify-self , align-self -> single item content
+        */
+        align-items: center;
+        align-items: flex-start;
+        align-items: flex-end;
 
-        grid-template-columns: [start] 1fr [col-1-end] 1fr [col-2-end] 1fr[end];
-        grid-template-rows: [start] 1fr 1fr 1fr[end];
+        justify-items: center;
+        justify-items: flex-start;
+        justify-items: flex-end;
       }
       .cell-1 {
-        grid-column: start/end;
-        grid-row: start/end;
-
-        grid-column: start/col-2-end;
-        grid-row: start/end;
+        align-self: flex-end;
+        justify-self:end ;
       }
-      .cell-2 {
+
+      .cell-1 {
+      }
+      .cell-6 {
+      }
+      .cell-4 {
       }
     </style>
   </head>
@@ -40,7 +47,6 @@
       <div class="cell cell-4">cell 4</div>
       <div class="cell cell-5">cell 5</div>
       <div class="cell cell-6">cell 6</div>
-      <div class="cell">cell 7</div>
     </div>
   </body>
 </html>

@@ -18,7 +18,7 @@ body {
   font-weight: bold;
   text-align: center;
   border: 3px solid red;
-  color: #fff;
+  color: #222;
 }
 .cell-1 {
   background: #581f18;
@@ -34,4 +34,7 @@ body {
 }
 .cell-5 {
   background: #51cb20;
+}
+.cell-6 {
+  background: blue;
 }
