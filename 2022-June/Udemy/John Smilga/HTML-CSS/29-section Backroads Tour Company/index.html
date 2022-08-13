@@ -18,10 +18,68 @@
   <body>
     <!-- header  -->
     <!-- navbar -->
+    <nav class="navbar">
+      <!-- nav-center -->
+      <div class="nav-center">
+        <!-- nav-header -->
+        <div class="nav-header">
+          <img src="./images/logo.svg" alt="Backroom tour" class="nav-logo" />
+          <button type="button" class="nav-toggle" id="nav-toggle">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+        <!-- end of nav-header -->
+
+        <!-- nav links -->
+        <ul class="nav-links" id="nav-links">
+          <!-- link-1 -->
+          <li><a href="#home" class="nav-link scroll-link">home</a></li>
+          <!-- link-2 -->
+          <li><a href="#about" class="nav-link scroll-link">about</a></li>
+          <!-- link-3 -->
+          <li>
+            <a href="#services" class="nav-link scroll-link">services</a>
+          </li>
+          <!-- link-4 -->
+          <li>
+            <a href="#featured" class="nav-link scroll-link">featured</a>
+          </li>
+          <!-- link-5 -->
+          <li><a href="#gallery" class="nav-link scroll-link">gallery</a></li>
+        </ul>
+        <!-- end of nav links -->
+
+        <!-- nav-icon -->
+        <ul class="nav-icons">
+          <!-- nav-link-1 -->
+          <li>
+            <a href="https://wwww.twitter.com" target="_blank" class="nav-icon">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </li>
+
+          <!-- nav-link-2 -->
+          <li>
+            <a href="https://wwww.twitter.com" target="_blank" class="nav-icon">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+
+          <!-- nav-link-3 -->
+          <li>
+            <a href="https://wwww.twitter.com" target="_blank" class="nav-icon">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
+        <!-- end of nav-icon -->
+      </div>
+    </nav>
+
     <!-- end of navbar -->
 
     <!-- hero -->
-    <div class="hero">
+    <div class="hero" id="home">
       <div class="hero-banner">
         <h1>continue exploring</h1>
         <p>
@@ -33,323 +91,323 @@
     </div>
     <!-- end of hero -->
     <!-- end of header  -->
+    <main>
+      <!-- about section -->
+      <section class="section" id="about">
+        <!-- title -->
+        <div class="section-title">
+          <h2>about<span>us</span></h2>
+        </div>
+        <!-- end of title -->
 
-    <!-- about section -->
-    <section class="section" id="about">
-      <!-- title -->
-      <div class="section-title">
-        <h2>about<span>us</span></h2>
-      </div>
-      <!-- end of title -->
+        <div class="section-center about-center">
+          <!-- about img wrapper L-1-->
+          <article class="about-img">
+            <img
+              src="./images/about.jpeg"
+              class="about-photo"
+              alt="awesome beach"
+            />
+          </article>
+          <!-- about img -->
 
-      <div class="section-center about-center">
-        <!-- about img wrapper L-1-->
-        <article class="about-img">
-          <img
-            src="./images/about.jpeg"
-            class="about-photo"
-            alt="awesome beach"
-          />
-        </article>
-        <!-- about img -->
-
-        <!-- about info L-2 -->
-        <article class="about-info">
-          <h3>explore the difference</h3>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur elit. Nulla accusamus
-            consequuntur numquam perspiciatis quidem vel blanditiis cum?
-          </p>
-          <p>
-            Lorem ipsum dolor sit, amet Nulla earum amet suscipit accusamus
-            consequuntur numquam perspiciatis quidem vel blanditiis cum?
-          </p>
-          <a href="#" class="btn">read more</a>
-        </article>
-        <!-- about img -->
-      </div>
-    </section>
-    <!-- end of about section -->
-
-    <!-- services -->
-    <section class="section services" id="services">
-      <!-- services title -->
-      <div class="section-title">
-        <h2>our <span>service</span></h2>
-      </div>
-      <!-- end of services title -->
-      <div class="section-center services-center">
-        <!-- 1 service -->
-        <article class="service">
-          <!-- Lay-1 -->
-          <span class="service-icon">
-            <i class="fas fa-wallet fa-fw"></i>
-          </span>
-          <!-- Lay-2 -->
-          <div class="service-info">
-            <h4 class="service-title">saving money</h4>
-            <p class="service-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-              recusandae labore debitis similique molestiae cumque?
-            </p>
-          </div>
-        </article>
-        <!-- end of 1 service -->
-
-        <!-- 2 service -->
-        <article class="service">
-          <!-- Lay-1 -->
-          <span class="service-icon">
-            <i class="fas fa-tree fa-fw"></i>
-          </span>
-          <!-- Lay-2 -->
-          <div class="service-info">
-            <h4 class="service-title">endless biking</h4>
-            <p class="service-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-              recusandae labore debitis similique molestiae cumque?
-            </p>
-          </div>
-        </article>
-        <!-- end of 2 service -->
-
-        <!-- 3 service -->
-        <article class="service">
-          <!-- Lay-1 -->
-          <span class="service-icon">
-            <i class="fas fa-socks fa-fw"></i>
-          </span>
-          <!-- Lay-2 -->
-          <div class="service-info">
-            <h4 class="service-title">amazing comfort</h4>
-            <p class="service-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-              recusandae labore debitis similique molestiae cumque?
-            </p>
-          </div>
-        </article>
-        <!-- end of 3 service -->
-      </div>
-    </section>
-    <!--end services -->
-
-    <!-- featured tours -->
-    <section class="section" id="featured">
-      <!-- featured title -->
-      <div class="section-title">
-        <h2>featured <span>tours</span></h2>
-      </div>
-      <!-- end of featured title -->
-      <!-- featured center -->
-      <div class="section-center featured-center">
-        <!-- card-1 -->
-        <article class="tour-card">
-          <div class="tour-img-container">
-            <img src="./images/tour-1.jpeg" class="tour-img" alt="" />
-            <p class="tour-date">august 32nd , 2023</p>
-          </div>
-          <!-- tour info -->
-          <div class="tour-info">
-            <div class="tour-title">
-              <h4>tibet adventure</h4>
-              <p>5 days</p>
-            </div>
+          <!-- about info L-2 -->
+          <article class="about-info">
+            <h3>explore the difference</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
-              pariatur eligendi deleniti quibusdam minus cum. Lorem ipsum dolor
-              sit.
+              Lorem ipsum dolor sit, amet consectetur elit. Nulla accusamus
+              consequuntur numquam perspiciatis quidem vel blanditiis cum?
             </p>
-            <div class="tour-footer">
-              <p>
-                <span> <i class="fas fa-map fa-fw"></i> usa </span>
-              </p>
-              <p>from $2200</p>
-            </div>
-          </div>
-        </article>
-        <!-- end of card 1 -->
-
-        <!-- card-2 -->
-        <article class="tour-card">
-          <div class="tour-img-container">
-            <img src="./images/tour-2.jpeg" class="tour-img" alt="" />
-            <p class="tour-date">feb 29th , 2023</p>
-          </div>
-          <!-- tour info -->
-          <div class="tour-info">
-            <h4>best of javascript</h4>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
-              pariatur eligendi deleniti quibusdam minus cum. Lorem ipsum dolor
-              sit.
+              Lorem ipsum dolor sit, amet Nulla earum amet suscipit accusamus
+              consequuntur numquam perspiciatis quidem vel blanditiis cum?
             </p>
-            <div class="tour-footer">
-              <p>
-                <span> <i class="fas fa-map fa-fw"></i> goa </span>
+            <a href="#" class="btn">read more</a>
+          </article>
+          <!-- about img -->
+        </div>
+      </section>
+      <!-- end of about section -->
+
+      <!-- services -->
+      <section class="section services" id="services">
+        <!-- services title -->
+        <div class="section-title">
+          <h2>our <span>service</span></h2>
+        </div>
+        <!-- end of services title -->
+        <div class="section-center services-center">
+          <!-- 1 service -->
+          <article class="service">
+            <!-- Lay-1 -->
+            <span class="service-icon">
+              <i class="fas fa-wallet fa-fw"></i>
+            </span>
+            <!-- Lay-2 -->
+            <div class="service-info">
+              <h4 class="service-title">saving money</h4>
+              <p class="service-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Deleniti recusandae labore debitis similique molestiae cumque?
               </p>
-              <p>3 days</p>
-              <p>from $100</p>
             </div>
-          </div>
-        </article>
-        <!-- end of card 2 -->
+          </article>
+          <!-- end of 1 service -->
 
-        <!-- card-3 -->
-        <article class="tour-card">
-          <div class="tour-img-container">
-            <img src="./images/tour-3.jpeg" class="tour-img" alt="" />
-            <p class="tour-date">may 31th , 2023</p>
-          </div>
-          <!-- tour info -->
-          <div class="tour-info">
-            <h4>explore russia</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
-              pariatur eligendi deleniti quibusdam minus cum. Lorem ipsum dolor
-              sit.
-            </p>
-            <div class="tour-footer">
-              <p>
-                <span> <i class="fas fa-map fa-fw"></i> russia </span>
+          <!-- 2 service -->
+          <article class="service">
+            <!-- Lay-1 -->
+            <span class="service-icon">
+              <i class="fas fa-tree fa-fw"></i>
+            </span>
+            <!-- Lay-2 -->
+            <div class="service-info">
+              <h4 class="service-title">endless biking</h4>
+              <p class="service-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Deleniti recusandae labore debitis similique molestiae cumque?
               </p>
-              <p>10 days</p>
-              <p>from $6500</p>
             </div>
-          </div>
-        </article>
-        <!-- end of card 3 -->
+          </article>
+          <!-- end of 2 service -->
 
-        <!-- card-4 -->
-        <article class="tour-card">
-          <div class="tour-img-container">
-            <img src="./images/tour-4.jpeg" class="tour-img" alt="" />
-            <p class="tour-date">june 3rd, 2023</p>
-          </div>
-          <!-- tour info -->
-          <div class="tour-info">
-            <h4>defcon event</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
-              pariatur eligendi deleniti quibusdam minus cum. Lorem ipsum dolor
-              sit.
-            </p>
-            <div class="tour-footer">
-              <p>
-                <span> <i class="fas fa-map fa-fw"></i> uk </span>
+          <!-- 3 service -->
+          <article class="service">
+            <!-- Lay-1 -->
+            <span class="service-icon">
+              <i class="fas fa-socks fa-fw"></i>
+            </span>
+            <!-- Lay-2 -->
+            <div class="service-info">
+              <h4 class="service-title">amazing comfort</h4>
+              <p class="service-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Deleniti recusandae labore debitis similique molestiae cumque?
               </p>
-              <p>8 days</p>
-              <p>from $5000</p>
             </div>
-          </div>
-        </article>
-        <!-- end of card 4 -->
-      </div>
-      <div class="tour-btn">
-        <a href="#" class="btn">all tour</a>
-      </div>
-    </section>
-    <!-- end of featured tours -->
+          </article>
+          <!-- end of 3 service -->
+        </div>
+      </section>
+      <!--end services -->
 
-    <!-- contact -->
-    <section class="section contact" id="contact">
-      <div class="section-center contact-center">
-        <!-- contact title -->
-        <article class="contact-title">
-          <h3>want latest tour info and updated ?</h3>
-          <p>Sign up for newsletter and stay up to date</p>
-        </article>
-        <!-- contact form -->
-        <form action="" class="contact-form">
-          <input
-            type="email"
-            name="email"
-            class="form-control"
-            placeholder="your email"
-            aria-label="your email"
-          />
-          <button type="submit" class="btn-submit">submit</button>
-        </form>
-      </div>
-    </section>
-    <!-- end of contact -->
+      <!-- featured tours -->
+      <section class="section" id="featured">
+        <!-- featured title -->
+        <div class="section-title">
+          <h2>featured <span>tours</span></h2>
+        </div>
+        <!-- end of featured title -->
+        <!-- featured center -->
+        <div class="section-center featured-center">
+          <!-- card-1 -->
+          <article class="tour-card">
+            <div class="tour-img-container">
+              <img src="./images/tour-1.jpeg" class="tour-img" alt="" />
+              <p class="tour-date">august 32nd , 2023</p>
+            </div>
+            <!-- tour info -->
+            <div class="tour-info">
+              <div class="tour-title">
+                <h4>tibet adventure</h4>
+                <p>5 days</p>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
+                pariatur eligendi deleniti quibusdam minus cum. Lorem ipsum
+                dolor sit.
+              </p>
+              <div class="tour-footer">
+                <p>
+                  <span> <i class="fas fa-map fa-fw"></i> usa </span>
+                </p>
+                <p>from $2200</p>
+              </div>
+            </div>
+          </article>
+          <!-- end of card 1 -->
 
-    <!-- gallery  -->
-    <section id="gallery">
-      <div class="gallery-center">
-        <!--  item-1 -->
-        <article class="gallery-img-container">
-          <img src="./images/tour-1.jpeg" class="gallery-img" alt="" />
-          <a href="#" class="gallery-icon">
-            <i class="fas fa-search"></i>
-          </a>
-        </article>
-        <!-- end of  item-1 -->
+          <!-- card-2 -->
+          <article class="tour-card">
+            <div class="tour-img-container">
+              <img src="./images/tour-2.jpeg" class="tour-img" alt="" />
+              <p class="tour-date">feb 29th , 2023</p>
+            </div>
+            <!-- tour info -->
+            <div class="tour-info">
+              <h4>best of javascript</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
+                pariatur eligendi deleniti quibusdam minus cum. Lorem ipsum
+                dolor sit.
+              </p>
+              <div class="tour-footer">
+                <p>
+                  <span> <i class="fas fa-map fa-fw"></i> goa </span>
+                </p>
+                <p>3 days</p>
+                <p>from $100</p>
+              </div>
+            </div>
+          </article>
+          <!-- end of card 2 -->
 
-        <!--  item-2 -->
-        <article class="gallery-img-container">
-          <img src="./images/tour-2.jpeg" class="gallery-img" alt="" />
-          <a href="#" class="gallery-icon">
-            <i class="fas fa-search"></i>
-          </a>
-        </article>
-        <!-- end of  item-2 -->
+          <!-- card-3 -->
+          <article class="tour-card">
+            <div class="tour-img-container">
+              <img src="./images/tour-3.jpeg" class="tour-img" alt="" />
+              <p class="tour-date">may 31th , 2023</p>
+            </div>
+            <!-- tour info -->
+            <div class="tour-info">
+              <h4>explore russia</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
+                pariatur eligendi deleniti quibusdam minus cum. Lorem ipsum
+                dolor sit.
+              </p>
+              <div class="tour-footer">
+                <p>
+                  <span> <i class="fas fa-map fa-fw"></i> russia </span>
+                </p>
+                <p>10 days</p>
+                <p>from $6500</p>
+              </div>
+            </div>
+          </article>
+          <!-- end of card 3 -->
 
-        <!--  item-3 -->
-        <article class="gallery-img-container">
-          <img src="./images/tour-3.jpeg" class="gallery-img" alt="" />
-          <a href="#" class="gallery-icon">
-            <i class="fas fa-search"></i>
-          </a>
-        </article>
-        <!-- end of  item-3 -->
+          <!-- card-4 -->
+          <article class="tour-card">
+            <div class="tour-img-container">
+              <img src="./images/tour-4.jpeg" class="tour-img" alt="" />
+              <p class="tour-date">june 3rd, 2023</p>
+            </div>
+            <!-- tour info -->
+            <div class="tour-info">
+              <h4>defcon event</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
+                pariatur eligendi deleniti quibusdam minus cum. Lorem ipsum
+                dolor sit.
+              </p>
+              <div class="tour-footer">
+                <p>
+                  <span> <i class="fas fa-map fa-fw"></i> uk </span>
+                </p>
+                <p>8 days</p>
+                <p>from $5000</p>
+              </div>
+            </div>
+          </article>
+          <!-- end of card 4 -->
+        </div>
+        <div class="tour-btn">
+          <a href="#" class="btn">all tour</a>
+        </div>
+      </section>
+      <!-- end of featured tours -->
 
-        <!--  item-4 -->
-        <article class="gallery-img-container">
-          <img src="./images/tour-4.jpeg" class="gallery-img" alt="" />
-          <a href="#" class="gallery-icon">
-            <i class="fas fa-search"></i>
-          </a>
-        </article>
-        <!-- end of  item-4 -->
+      <!-- contact -->
+      <section class="section contact" id="contact">
+        <div class="section-center contact-center">
+          <!-- contact title -->
+          <article class="contact-title">
+            <h3>want latest tour info and updated ?</h3>
+            <p>Sign up for newsletter and stay up to date</p>
+          </article>
+          <!-- contact form -->
+          <form action="" class="contact-form">
+            <input
+              type="email"
+              name="email"
+              class="form-control"
+              placeholder="your email"
+              aria-label="your email"
+            />
+            <button type="submit" class="btn-submit">submit</button>
+          </form>
+        </div>
+      </section>
+      <!-- end of contact -->
 
-        <!--  item-5 -->
-        <article class="gallery-img-container">
-          <img src="./images/tour-5.jpeg" class="gallery-img" alt="" />
-          <a href="#" class="gallery-icon">
-            <i class="fas fa-search"></i>
-          </a>
-        </article>
-        <!-- end of  item-5 -->
+      <!-- gallery  -->
+      <section id="gallery">
+        <div class="gallery-center">
+          <!--  item-1 -->
+          <article class="gallery-img-container">
+            <img src="./images/tour-1.jpeg" class="gallery-img" alt="" />
+            <a href="#" class="gallery-icon">
+              <i class="fas fa-search"></i>
+            </a>
+          </article>
+          <!-- end of  item-1 -->
 
-        <!--  item-6 -->
-        <article class="gallery-img-container">
-          <img src="./images/tour-6.jpeg" class="gallery-img" alt="" />
-          <a href="#" class="gallery-icon">
-            <i class="fas fa-search"></i>
-          </a>
-        </article>
-        <!-- end of  item-6 -->
+          <!--  item-2 -->
+          <article class="gallery-img-container">
+            <img src="./images/tour-2.jpeg" class="gallery-img" alt="" />
+            <a href="#" class="gallery-icon">
+              <i class="fas fa-search"></i>
+            </a>
+          </article>
+          <!-- end of  item-2 -->
 
-        <!--  item-1 -->
-        <article class="gallery-img-container">
-          <img src="./images/tour-1.jpeg" class="gallery-img" alt="" />
-          <a href="#" class="gallery-icon">
-            <i class="fas fa-search"></i>
-          </a>
-        </article>
-        <!-- end of  item-1 -->
-        <!--  item-6 -->
-        <article class="gallery-img-container">
-          <img src="./images/tour-3.jpeg" class="gallery-img" alt="" />
-          <a href="#" class="gallery-icon">
-            <i class="fas fa-search"></i>
-          </a>
-        </article>
-        <!-- end of  item-6 -->
-      </div>
-    </section>
-    <!-- end of gallery  -->
+          <!--  item-3 -->
+          <article class="gallery-img-container">
+            <img src="./images/tour-3.jpeg" class="gallery-img" alt="" />
+            <a href="#" class="gallery-icon">
+              <i class="fas fa-search"></i>
+            </a>
+          </article>
+          <!-- end of  item-3 -->
 
+          <!--  item-4 -->
+          <article class="gallery-img-container">
+            <img src="./images/tour-4.jpeg" class="gallery-img" alt="" />
+            <a href="#" class="gallery-icon">
+              <i class="fas fa-search"></i>
+            </a>
+          </article>
+          <!-- end of  item-4 -->
+
+          <!--  item-5 -->
+          <article class="gallery-img-container">
+            <img src="./images/tour-5.jpeg" class="gallery-img" alt="" />
+            <a href="#" class="gallery-icon">
+              <i class="fas fa-search"></i>
+            </a>
+          </article>
+          <!-- end of  item-5 -->
+
+          <!--  item-6 -->
+          <article class="gallery-img-container">
+            <img src="./images/tour-6.jpeg" class="gallery-img" alt="" />
+            <a href="#" class="gallery-icon">
+              <i class="fas fa-search"></i>
+            </a>
+          </article>
+          <!-- end of  item-6 -->
+
+          <!--  item-1 -->
+          <article class="gallery-img-container">
+            <img src="./images/tour-1.jpeg" class="gallery-img" alt="" />
+            <a href="#" class="gallery-icon">
+              <i class="fas fa-search"></i>
+            </a>
+          </article>
+          <!-- end of  item-1 -->
+          <!--  item-6 -->
+          <article class="gallery-img-container">
+            <img src="./images/tour-3.jpeg" class="gallery-img" alt="" />
+            <a href="#" class="gallery-icon">
+              <i class="fas fa-search"></i>
+            </a>
+          </article>
+          <!-- end of  item-6 -->
+        </div>
+      </section>
+      <!-- end of gallery  -->
+    </main>
     <!-- footer -->
     <footer class="section footer">
       <!-- footer links -->
