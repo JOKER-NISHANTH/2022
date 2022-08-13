@@ -1,3 +1,155 @@
+/*
+==============
+Variables
+==============
+*/
+:root {
+  --clr-primaryColor: #f15025;
+  --clr-mainBlack: #222;
+  --clr-mainWhite: #fff;
+  --clr-offWhite: #f7f7f7;
+  --clr-darkGray: #afafaf;
+  --mainTransition: all 0.3s linear;
+  --mainSpacing: 0.2rem;
+}
+
+/*
+==============
+Global Styles
+==============
+*/
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Fira Code", monospace;
+  color: var(--clr-mainBlack);
+  background-color: var(--clr-mainWhite);
+  line-height: 1.5;
 }
+a {
+  text-decoration: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+h1,
+h2,
+h3 {
+  text-transform: capitalize;
+  letter-spacing: var(--mainSpacing);
+  margin-bottom: 1.25rem;
+}
+h1 {
+  font-size: 2rem;
+}
+h2 {
+  margin-bottom: 0;
+}
+p {
+  font-weight: 300;
+  font-size: 0.7rem;
+  line-height: 2;
+}
+/* button */
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  text-transform: capitalize;
+  border: 3px solid var(--clr-primaryColor);
+  color: var(--clr-primaryColor);
+  margin: 4rem;
+  transition: var(--mainTransition);
+  background: transparent;
+}
+.btn:hover {
+  background: var(--clr-primaryColor);
+  color: var(--clr-mainWhite);
+}
+
+/*
+==============
+Main Navbar
+==============
+*/
+.main-navbar {
+  background: var(--clr-darkGray);
+  padding: 0 2rem;
+}
+.main-navbar li {
+  list-style: none;
+}
+.main-navbar a {
+  text-transform: capitalize;
+  display: block;
+  padding: 1rem 0;
+  color: var(--clr-primaryColor);
+  letter-spacing: var(--mainSpacing);
+  transition: var(--mainTransition);
+}
+.main-navbar a:hover {
+  color: var(--clr-mainBlack);
+}
+
+@media screen and (min-width: 992px) {
+  .main-navbar ul {
+    max-width: 1170px;
+    margin: 0 auto;
+    /* background: var(--clr-mainWhite); */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .main-navbar a {
+    text-align: center;
+  }
+}
+/*
+==============
+Hero project
+==============
+*/
+.hero-header {
+  min-height: 100vh;
+  background: var(--clr-primaryColor);
+  color: var(--clr-mainWhite);
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.hero-banner {
+  /* background: blue; */
+  /* text-align: center; */
+}
+
+.hero-banner p {
+  width: 80%;
+  max-width: 560px;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+  .hero-banner {
+    padding: 0 3rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero-header {
+    background: linear-gradient(rgba(241,80,37,0.75),rgba(0,0,0,0.5)),
+      url("./images/image-2.jpeg") center/cover no-repeat fixed;
+  }
+}
+/*
+==============
+Global Styles
+==============
+*/
+/*
+==============
+Global Styles
+==============
+*/
