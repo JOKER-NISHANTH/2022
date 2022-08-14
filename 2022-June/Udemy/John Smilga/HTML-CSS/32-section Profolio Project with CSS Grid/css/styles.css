@@ -182,17 +182,17 @@ Navbar
   align-items: center;
   transition: var(--transition);
 }
-.nav-center{
+.nav-center {
   width: 100%;
   max-width: 1170px;
   margin: 0 auto;
 }
-.nav-header{
+.nav-header {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: auto 1fr;
   align-items: center;
 }
-.nav-btn{
+.nav-btn {
   border-color: transparent;
   background: transparent;
   color: var(--clr-primary-5);
@@ -202,6 +202,38 @@ Navbar
   justify-self: end;
 }
 /* big-screen */
+@media screen and (min-width: 768px) {
+  .nav {
+    background: var(--clr-primary-9);
+  }
+  .nav-btn {
+    display: none;
+  }
+  .nav-links {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    column-gap: 2rem;
+    align-items: center;
+    justify-self: end;
+  }
+  .nav-links a {
+    text-transform: capitalize;
+    color: var(--clr-grey-1);
+    font-weight: bold;
+    letter-spacing: var(--spacing);
+    transition: var(--transition);
+  }
+  .nav-links a:hover {
+    color: var(--clr-primary-5);
+  }
+  .nav-center{
+    display: grid;
+    grid-template-columns: auto 1fr; /* img nav-links */
+    align-items: center;
+  }
+
+}
 /*
 ===============
 Sidebar
