@@ -819,7 +819,10 @@ Blog
   height: 100%;
 
   border-radius: var(--radius);
-  
+
+  /* iPhone */
+  -webkit-transform: translate3d(0,0,0);
+  visibility: visible;
 }
 .card-front {
   background: var(--clr-white);
