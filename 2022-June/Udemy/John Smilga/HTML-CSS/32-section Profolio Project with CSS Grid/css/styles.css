@@ -468,7 +468,20 @@ Services
 .service:hover .underline {
   background: var(--clr-white);
 }
-
+/* 2 column layout */
+@media screen and (min-width: 676px) {
+  .services-center {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+  }
+}
+/* 3 column layout */
+@media screen and (min-width: 992px) {
+  .services-center {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 /*
 ===============
 Projects
