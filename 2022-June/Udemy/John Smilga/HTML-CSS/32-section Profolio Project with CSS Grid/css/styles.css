@@ -137,7 +137,6 @@ p {
   letter-spacing: var(--spacing);
   display: inline-block;
   font-weight: 700;
-  -webkit-transition: var(--transition);
   transition: var(--transition);
   font-size: 0.875rem;
   border: 2px solid transparent;
@@ -224,7 +223,8 @@ Navbar
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-items: center;
-    column-gap: 2rem;
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
     align-items: center;
     justify-self: end;
   }
@@ -357,7 +357,8 @@ Hero
 .hero-photo {
   max-width: 25rem;
   max-height: 30rem;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: var(--radius);
   /* get img front of the lines */
   position: relative;
@@ -473,7 +474,8 @@ Services
   .services-center {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 2rem;
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
   }
 }
 /* 3 column layout */
@@ -518,7 +520,8 @@ Projects
 }
 .project-img {
   border-radius: var(--radius);
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   transition: var(--transition);
   height: 15rem;
 }
@@ -546,7 +549,8 @@ Projects
   .projects-center {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 2rem;
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
   }
 }
 @media screen and (min-width: 992px) {
@@ -603,7 +607,8 @@ Connect
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   z-index: -2;
 }
 
@@ -624,7 +629,17 @@ Connect
   padding: 3rem 5rem 12rem 5rem;
   text-align: center;
 
-  clip-path: polygon(
+  -webkit-clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% 75%,
+    75% 75%,
+    75% 100%,
+    50% 75%,
+    0% 75%
+  );
+
+          clip-path: polygon(
     0% 0%,
     100% 0%,
     100% 75%,
@@ -639,7 +654,9 @@ Connect
   place-items: center;
   text-align: center;
 
-  clip-path: polygon(48% 0, 100% 10%, 100% 90%, 48% 100%, 0 90%, 0 10%);
+  -webkit-clip-path: polygon(48% 0, 100% 10%, 100% 90%, 48% 100%, 0 90%, 0 10%);
+
+          clip-path: polygon(48% 0, 100% 10%, 100% 90%, 48% 100%, 0 90%, 0 10%);
 }
 .video-banner .section-title {
   margin-bottom: 2rem;
@@ -658,7 +675,8 @@ Skills
   .skills-center {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 2rem;
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
   }
 }
 
@@ -790,7 +808,8 @@ Blog
   perspective: 1500px;
 }
 .card-side {
-  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
 
   transition: all 2s linear;
   position: absolute;
@@ -800,6 +819,7 @@ Blog
   height: 100%;
 
   border-radius: var(--radius);
+  
 }
 .card-front {
   background: var(--clr-white);
@@ -821,7 +841,8 @@ Blog
 }
 .card-front img {
   height: 13rem;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-top-left-radius: var(--radius);
   border-top-right-radius: var(--radius);
 }
@@ -829,7 +850,8 @@ Blog
 .card-footer img {
   width: 2rem;
   height: 2rem;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 50%;
 }
 .card-footer {
@@ -916,7 +938,8 @@ Products Page
   height: 17rem;
   border-top-left-radius: var(--radius);
   border-top-right-radius: var(--radius);
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .project-container{
   position: relative;
