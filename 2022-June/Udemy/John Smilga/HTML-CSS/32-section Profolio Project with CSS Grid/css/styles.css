@@ -1,12 +1,12 @@
 /*
-=============== 
+===============
 Fonts
 ===============
 */
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
 
 /*
-=============== 
+===============
 Variables
 ===============
 */
@@ -48,7 +48,7 @@ Variables
   --max-width: 1170px;
 }
 /*
-=============== 
+===============
 Global Styles
 ===============
 */
@@ -167,33 +167,63 @@ p {
 /* added during recording */
 
 /*
-=============== 
+===============
 Navbar
 ===============
 */
-
+/* small-screen */
+.nav-links {
+  display: none;
+}
+.nav {
+  height: 5rem;
+  padding: 1rem;
+  display: grid;
+  align-items: center;
+  transition: var(--transition);
+}
+.nav-center{
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.nav-header{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  align-items: center;
+}
+.nav-btn{
+  border-color: transparent;
+  background: transparent;
+  color: var(--clr-primary-5);
+  cursor: pointer;
+  font-size: 2rem;
+  /* justify-content : space-between  */
+  justify-self: end;
+}
+/* big-screen */
 /*
-=============== 
+===============
 Sidebar
 ===============
 */
 
 /*
-=============== 
+===============
 Hero
 ===============
 */
 /* underline added to globals */
 
 /*
-=============== 
+===============
 About
 ===============
 */
 /* section title added to globals */
 
 /*
-=============== 
+===============
 Services
 ===============
 */
@@ -201,47 +231,47 @@ Services
 /* bg-grey in globals */
 
 /*
-=============== 
+===============
 Projects
 ===============
 */
 
 /*
-=============== 
+===============
 Connect
 ===============
 */
 
 /*
-=============== 
+===============
 Skills
 ===============
 */
 /*
-=============== 
+===============
 Timeline
 ===============
 */
 
 /*
-=============== 
+===============
 Blog
 ===============
 */
 
 /*
-=============== 
+===============
 Footer
 ===============
 */
 /*
-=============== 
+===============
 Single Page
 ===============
 */
 
 /*
-=============== 
+===============
 Products Page
 ===============
 */
