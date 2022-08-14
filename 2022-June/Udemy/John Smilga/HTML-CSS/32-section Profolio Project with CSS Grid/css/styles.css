@@ -398,23 +398,22 @@ About
 .about-title .underline {
   margin-left: 0;
 }
-.about-center{
+.about-center {
   display: grid;
   gap: 3rem 2rem;
 }
-.about-img{
+.about-img {
   justify-self: center;
 }
 
-@media screen and (min-width:992px) {
-  .about-center{
+@media screen and (min-width: 992px) {
+  .about-center {
     grid-template-columns: 1fr 1fr;
-
   }
-  .about-img{
+  .about-img {
     position: relative;
   }
-   .about-img::before {
+  .about-img::before {
     content: "";
     position: absolute;
     width: 100%;
@@ -424,7 +423,7 @@ About
     left: -2rem;
     border-radius: var(--radius);
   }
-  .about-info{
+  .about-info {
     align-self: center;
   }
 }
@@ -433,8 +432,42 @@ About
 Services
 ===============
 */
-/* small screen layout setup */
 /* bg-grey in globals */
+.bg-grey {
+  background-color: var(--clr-grey-10);
+}
+/* small screen layout setup */
+.service {
+  background: var(--clr-white);
+  padding: 3rem 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: var(--radius);
+  text-align: center;
+  transition: var(--transition);
+}
+.service-icon {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+.service .underline {
+  width: 3rem;
+  height: 0.12rem;
+  transition: var(--transition);
+}
+.service p {
+  transition: var(--transition);
+  /* background: blue; */
+}
+.service:hover {
+  background: var(--clr-primary-5);
+  color: var(--clr-white);
+}
+.service:hover p {
+  color: var(--clr-white);
+}
+.service:hover .underline {
+  background: var(--clr-white);
+}
 
 /*
 ===============
