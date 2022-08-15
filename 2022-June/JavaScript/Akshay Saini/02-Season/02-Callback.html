@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callback hell</title>
+</head>
+<body>
+    <script>
+        console.log("Item 1")
+        console.log("Item 2")
+        console.log("Item 3")
+        console.log("-------------");
+        console.log("Item 1")
+        setTimeout(function () {
+            console.log("Item 2")
+        },5000)
+        console.log("Item 3")
+        console.log("-------------");
+
+        /* real world  example*/
+        const card = ["football","Volleyball","Cricket ball"]
+        api.createOrder(card , function(){
+            api.proceedToPayment()
+        })
+        /* callback hell is also pyramid of doom  */
+
+
+        /* inversion of control  */
+
+
+    </script>
+</body>
+</html>
