@@ -16,6 +16,64 @@
     <link rel="stylesheet" href="./main.css" />
   </head>
   <body>
-    <h1>task manager starter</h1>
+    <form action="" class="form task-form">
+      <h4>task manager</h4>
+      <div class="form-control">
+        <input
+          type="text"
+          class="form-input task-input"
+          placeholder="eg: write blog"
+          name="name"
+          id=""
+        />
+        <button class="btn submit-btn" type="submit">submit</button>
+      </div>
+      <small class="form-alert">there was an error</small>
+    </form>
+
+    <!-- task list -->
+    <section class="task-container">
+      <p class="loading-text">Loading....</p>
+      <div class="tasks">
+        <!-- task-1  -->
+        <div class="single-task">
+          <h5>
+            <i class="far fa-check-circle"></i>
+            task name
+          </h5>
+          <div class="task-links">
+            <!-- edit link -->
+            <a href="task.html" class="edit-link">
+              <i class="fas fa-edit"></i>
+            </a>
+            <!-- delete btn -->
+            <button type="button" class="delete-btn" data-id="123">
+              <i class="fas fa-trash"></i>
+            </button>
+          </div>
+        </div>
+        <!-- end of task-1  -->
+
+         <!-- task-2  -->
+        <div class="single-task task-completed">
+          <h5>
+            <i class="far fa-check-circle"></i>
+            second task
+          </h5>
+          <div class="task-links">
+            <!-- edit link -->
+            <a href="task.html" class="edit-link">
+              <i class="fas fa-edit"></i>
+            </a>
+            <!-- delete btn -->
+            <button type="button" class="delete-btn" data-id="123">
+              <i class="fas fa-trash"></i>
+            </button>
+          </div>
+        </div>
+        <!-- end of task-2  -->
+      </div>
+    </section>
+    <!-- end of task list -->
   </body>
 </html>
