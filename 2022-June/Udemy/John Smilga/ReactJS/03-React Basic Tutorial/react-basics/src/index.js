@@ -2,8 +2,8 @@ import React from "react";
 import ReactDom from "react-dom";
 import "./index.css";
 /*
-    Mini Book Project
-    Props
+    Attribute
+    EventHandler
 */
 
 // setup vars
@@ -36,40 +36,34 @@ const BookList = () => {
     <section className="BookList">
       {books &&
         books.map((book) => {
-          return (
-            <Book
-              // Old methods
-              // img={book.img}
-              // author={book.author}
-              // title={book.title}
-              // altImg={book.altImg}
-
-              //  passing object as props
-              // book={book}
-
-              // key props
-              key={book.id}
-              //* passing props using spread operator
-              {...book}
-            />
-          );
+          return <Book key={book.id} {...book} />;
         })}
     </section>
   );
 };
 
-const Book = (props) => {
-  console.log(props);
-  // const { title, author, img, altImg } = props;
-
-  // const { title, author, img, altImg } = props.book;
-
-  const { title, author, img, altImg } = props;
+const Book = ({ title, author, img, altImg }) => {
+  // attribute and eventHandler
+  // onClick
+  // onMouseOver
+  const clickHandler = () => {
+    alert("Click");
+  };
+  const complexHandler = (author) => {
+    alert(author);
+  };
   return (
     <article className="book">
       <img src={img} alt={altImg} />
-      <h1>{title}</h1>
+      <h1 onClick={() => alert(title)}>{title}</h1>
       <h4>{author}</h4>
+      <button type="button" onClick={clickHandler}>
+        reference
+      </button>
+
+      <button type="button" onClick={() => complexHandler(author)}>
+        more complex
+      </button>
     </article>
   );
 };
