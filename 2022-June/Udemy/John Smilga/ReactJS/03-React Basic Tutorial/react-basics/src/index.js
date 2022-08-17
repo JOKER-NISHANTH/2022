@@ -1,34 +1,52 @@
 import React from "react";
 import ReactDom from "react-dom";
-
+import "./index.css";
 /*
     Mini Book Project
+    Props
 */
+
+// setup vars
+const data = {
+  author: "James Clear",
+  title: "Atomic Habits: The life-changing million",
+  img: "https://images-na.ssl-images-amazon.com/images/I/51-nXsSRfZL._SY264_BO1,204,203,200_QL40_FMwebp_.jpg",
+};
 
 const BookList = () => {
   return (
-    <section>
-      <Book />
+    <section className="BookList">
+      <Book job="developer" />
+      <Book title={data.title} author={data.author} img={data.img}>
+        {/* children */}
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla magni
+          nemo sed molestiae veritatis unde tempore voluptatum labore qui sunt.
+        </p>
+        {/* children */}
+      </Book>
     </section>
   );
 };
 
-const Book = () => {
+const Book = (props) => {
+  const { title, author, job, img, children } = props;
+  console.log(props);
   return (
-    <article>
-      <Image />
-      <Title />
-      <Author />
+    <article className="book">
+      <img src={img} alt="Atomic-Habits" />
+      <h1>{title}</h1>
+      <>{children}</>
+      <h4
+        style={{
+          color: "green",
+          fontSize: "1.5rem",
+          marginTop: "2rem",
+        }}
+      >
+        {author}
+      </h4>
     </article>
   );
 };
-const Image = () => (
-  <img
-    src="https://images-na.ssl-images-amazon.com/images/I/51-nXsSRfZL._SY264_BO1,204,203,200_QL40_FMwebp_.jpg"
-    alt="Atomic-Habits"
-  />
-);
-
-const Title = () => <h1>Atomic Habits: The life-changing million</h1>;
-const Author = () => <h3>James Clear</h3>;
 ReactDom.render(<BookList />, document.getElementById("root"));
