@@ -151,3 +151,32 @@ const Price = () => <h6>$5</h6>;
 ReactDom.render(<BookList />, document.getElementById("root"));
 
 ```
+
+## Passing a props in different ways
+
+```react
+
+   <Book
+              // Old methods
+              // img={book.img}
+              // author={book.author}
+              // title={book.title}
+              // altImg={book.altImg}
+
+              //  passing object as props
+              // book={book}
+
+              // key props
+              key={book.id}
+              //* passing props using spread operator
+              {...book}
+            />
+
+              console.log(props);
+  // const { title, author, img, altImg } = props;
+
+  // const { title, author, img, altImg } = props.book;
+
+  const { title, author, img, altImg } = props;
+
+```
