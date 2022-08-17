@@ -151,9 +151,3 @@ const Price = () => <h6>$5</h6>;
 ReactDom.render(<BookList />, document.getElementById("root"));
 
 ```
-
-## JSX Rules
-
-```react
-
-```
