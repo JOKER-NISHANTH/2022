@@ -19,7 +19,6 @@ const Book = () => {
       <Image />
       <Title />
       <Author />
-      <Price />
     </article>
   );
 };
@@ -32,5 +31,4 @@ const Image = () => (
 
 const Title = () => <h1>Atomic Habits: The life-changing million</h1>;
 const Author = () => <h3>James Clear</h3>;
-const Price = () => <h6>$5</h6>;
 ReactDom.render(<BookList />, document.getElementById("root"));
