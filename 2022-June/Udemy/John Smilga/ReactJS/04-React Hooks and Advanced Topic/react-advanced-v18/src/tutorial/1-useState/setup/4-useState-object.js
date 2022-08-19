@@ -15,6 +15,7 @@ const UseStateObject = () => {
       job: "Ethical Hacker",
     });
   };
+
   return (
     <>
       <h3> Name : {person.name}</h3>
