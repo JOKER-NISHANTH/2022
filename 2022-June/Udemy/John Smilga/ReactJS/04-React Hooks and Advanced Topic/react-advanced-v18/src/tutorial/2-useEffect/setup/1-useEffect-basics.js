@@ -3,10 +3,12 @@ import React, { useState, useEffect } from "react";
 // cleanup function
 // second parameter
 const UseEffectBasics = () => {
+  //  if the dependencies is [] , them the render done at first/initial render
   const [value, setValue] = useState(1);
   useEffect(() => {
     console.log("useEffect");
-  });
+    document.title = `No ${value}`;
+  }, [value]);
   console.log("Render Component");
   return (
     <>
