@@ -1,0 +1,17 @@
+#!/bin/bash
+
+echo "If Statement"
+
+myNum=201
+
+# eq, ne, gt, lt, 
+
+if [ $myNum -eq 200 ]
+
+	then
+		echo "Equal to 200"
+
+	else
+		echo "Not equal to 200"
+
+fi
