@@ -1,0 +1,27 @@
+#!/bin/bash
+
+<<comment
+	while declare and assign variable its not contain space between variable and equal sign
+comment
+
+myName="Nishanth"
+
+echo "Hello! ${myName}"
+
+echo "-----------------------------------------------------"
+
+<<comment
+	sub shell $()
+comment
+
+files=$(ls -lah)
+echo "Files and directory  ${files}"
+echo "-----------------------------------------------------"
+echo "Current date $(date)"
+
+echo "-----------------------------------------------------"
+echo "Current user-name $USER"
+
+echo "-----------------------------------------------------"
+echo  "Environment variable $(env)"
+echo "-----------------------------------------------------"
