@@ -6,6 +6,9 @@ const ShortCircuit = () => {
   const [text, setText] = useState("");
   const firstValue = text || "hello world";
   const secondValue = text && "hello world";
+
+  // toggle error
+  const [isError, setIsError] = useState(false);
   return (
     <>
       <h2>short circuit</h2>
@@ -22,6 +25,19 @@ const ShortCircuit = () => {
         </h2>
       )}
       {!text && <h2>Hello World ! </h2>}
+
+      <hr />
+
+      <button onClick={() => setIsError(!isError)} className="btn">
+        toggle error
+      </button>
+
+      {isError && <h4>Error in short circuit</h4>}
+      {isError ? (
+        <h4>Error in ternary operator </h4>
+      ) : (
+        <h4>No Error in ternary operator </h4>
+      )}
     </>
   );
 };
