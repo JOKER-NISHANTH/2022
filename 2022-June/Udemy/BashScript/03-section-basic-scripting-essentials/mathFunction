@@ -1,0 +1,11 @@
+#!/bin/bash
+
+echo "expr 20 + 10 = $(expr 20 + 10)"
+
+echo "expr 20 - 10 = $(expr 20 - 10)"
+
+echo "expr 20 / 10 = $(expr 20 / 10)"
+
+echo "expr 20 % 10 = $(expr 20 % 10)"
+
+echo "expr 20 * 10 = $(expr 20 \* 10)"
