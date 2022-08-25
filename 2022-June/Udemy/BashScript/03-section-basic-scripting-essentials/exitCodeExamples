@@ -1,0 +1,22 @@
+#!/bin/bash
+
+package=htops
+
+sudo apt install $package  >> package_install_results.log
+
+if [ $? -eq 0 ]
+	then
+		echo "The exit code for the package install is : $?"
+		echo "The installation of $package was successful.." >> package_install_success.log
+		echo "The new command is avaiable here: $(which $package)"
+	else
+		echo "The exit code for the package install is : $?"
+		echo "Error detect while installation $package package" >> package_install_failure.log
+fi
+
+echo "The exit code for the package install is : $?"
+
+
+apt install notExit
+exit 10
+echo $?

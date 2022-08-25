@@ -1,0 +1,21 @@
+echo $?
+0
+
+ cd /klkl
+-bash: cd: /klkl: No such file or directory
+
+echo $?
+1
+
+If the hex code zero is show the command successfull , other then zero the command is not successfull
+
+
+
+ ./exitCodeExamples
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+E: Unable to locate package htops
+The exit code for the package install is : 100
+
+
