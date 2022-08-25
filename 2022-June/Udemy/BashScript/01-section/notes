@@ -1,0 +1,7 @@
+echo $SHELL
+
+which bash
+
+chmod 
+
+pwd
