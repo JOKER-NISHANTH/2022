@@ -1,0 +1,28 @@
+#!/bin/bash
+
+<<command
+myVar=1
+while [ $myVar -le 10 ]
+    do
+        echo $myVar
+        myVar=$(( $myVar + 1 ))
+        sleep .5
+done
+command
+
+<<comment
+while [ -f /mnt/d/videoTutorialFiles/2022/2022-June/Udemy/BashScript/03-section-basic-scripting-essentials/variable ]
+    do
+        echo "The test file exists"
+done
+
+echo "The file no lomger exists. Exiting...."
+comment
+
+
+while [ -f /mnt/d/videoTutorialFiles/2022/2022-June/Udemy/BashScript/03-section-basic-scripting-essentials/variable ]
+    do
+        echo "As of $(date), the test file exists."
+done
+
+echo "As of $(date), the test file has gone missing (:"
