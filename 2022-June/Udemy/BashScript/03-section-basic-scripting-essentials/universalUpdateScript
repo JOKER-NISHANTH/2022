@@ -1,0 +1,21 @@
+#!/bin/bash
+
+
+
+if [ -d /etc/pacman.d ]
+    then
+        # The host is based on Arch , run pacman update command
+        sudo pacman -Syu
+fi
+
+if [ -d /etc/apt ]
+    then
+        # The host is based on  Debian or Ubuntu
+        # Run the apt version of the command
+        echo "System update ...."
+        sleep 3
+        sudo apt update -y
+        echo "System upgrade ...."
+        sleep 3
+        sudo apt dist-upgrade -y
+fi
