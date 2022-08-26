@@ -15,3 +15,4 @@ for file in logfiles/*.log
         tar -czvf $file.tar.gz $file
 done
 # ------------------------------------------
+#  export PATH=/usr/local/bin:$PATH
