@@ -1,0 +1,13 @@
+#!/bin/bash
+
+logFile=job_cron_results.log
+
+/usr/bin/echo "This script ran at the following time : $(/usr/bin/date)" 1>> $logFile
+
+<<command
+
+    crontab -e
+        -e edit mode
+    sudo crontab -u username -e
+    
+command
