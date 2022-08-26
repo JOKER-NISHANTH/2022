@@ -1,0 +1,13 @@
+#!/bin/bash
+
+#  sudo apt install at
+
+logFile=job_results.log
+
+echo "This script ran at the following time : $(date)" 1>> $logFile
+
+# at
+# atq
+# atrm <number>
+
+# at 21:41 082622 -f
