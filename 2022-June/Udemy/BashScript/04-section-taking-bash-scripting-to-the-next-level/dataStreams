@@ -1,0 +1,72 @@
+
+# stdout ls [ redirect 1> ]
+# stderr lx [ redirect 2> ]
+# stdin
+
+
+# 2> /dev/null
+
+# stderr
+#  find /etc -type f 2> /dev/null
+
+# stdout
+#  find /etc -type f 1> /dev/null
+#  find /etc -type f > /dev/null
+#  find /etc -type f > output.txt
+
+#  find /etc -type f 1> output 2> error
+
+#  find /etc -type f &> bothOutputError
+
+<<command
+
+    mv update.sh /usr/local/bin/update
+    logfile=/var/log/updater.log
+    errorlog=/var/log/updater_errors.log
+
+
+#!/bin/bash
+
+# is pound symbol
+
+release_file=/etc/os-release
+
+if grep -q "Arch" $release_file
+    then
+        # The host is based on Arch , run pacman update command
+        sudo pacman -Syu 1>>$logfile 2>>$errorlog
+        if [ $? -ne 0 ]
+            then
+                echo "An error occurred , please check the $errorlog file "
+        fi
+fi
+
+if grep -q "Debian" $release_file || grep -q "Ubuntu" $release_file || grep -q "Kali" $release_file
+    then
+        # The host is based on  Debian or Ubuntu
+        # Run the apt version of the command
+        echo "System update ...."
+        sleep 3
+        sudo apt update -y 1>>$logfile 2>>$errorlog
+        if [ $? -ne 0 ]
+            then
+                echo "An error occurred , please check the $errorlog file "
+        fi
+        echo "System upgrade ...."
+        sleep 3
+        sudo apt dist-upgrade -y 1>>$logfile 2>>$errorlog
+        if [ $? -ne 0 ]
+            then
+                echo "An error occurred , please check the $errorlog file "
+        fi
+fi
+
+
+    tail -f /var/log/updater.log -> -f real time log
+
+command
+
+# stdin (standard input)
+echo "Please enter the name : "
+read myName
+echo "Your name is $myName"
