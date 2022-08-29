@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+    <style>
+        form{
+            display: grid;
+            gap: 1.5rem;
+            width: min(20rem,100%);
+        }
+        .form-group{
+            display: grid;
+            gap: .5rem;
+            align-items: center;
+        }
+    </style>
+  </head>
+  <body>
+    <form action="" autocomplete="off">
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          pattern="[a-z0-9._+-]+@[a-z0-9-]+\.[a-z]{2,6}"
+          title="must be a valid email address"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          pattern="[a-zA-Z0-9]{8,}"
+          title="Must be at least 8 characters"
+          required
+        />
+
+        <p class="input-hint">Must be at least 8 characters</p>
+      </div>
+      <button>Submit</button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.boxes {
+  height: 400px;
+  width: 400px;
+  background-color: black;
+
+  display: flex;
+  /* horizontal align*/
+  justify-content: space-around;
+
+  /* vertical align*/
+  align-items: center;
+}
+.box-1 {
+  height: 100px;
+  width: 100px;
+  background-color: purple;
+  border: 2px solid red;
+  align-self: flex-start;
+}
+.box-2 {
+  height: 100px;
+  width: 100px;
+  background-color: darksalmon;
+  border: 2px solid red;
+}
+.box-3 {
+  height: 100px;
+  width: 100px;
+  background-color: aliceblue;
+  border: 2px solid red;
+  align-self: flex-end;
+}
