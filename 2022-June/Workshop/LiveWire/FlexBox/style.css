@@ -1,0 +1,32 @@
+body {
+  background-color: blue;
+  text-align: center;
+}
+
+.flex-container {
+  background-color: lightcoral;
+
+  height: 20rem;
+  /*  */
+  display: flex;
+  flex-direction: column;
+
+  flex-wrap: wrap;
+  flex-direction: row;
+
+  flex-flow: row-reverse wrap;
+
+  justify-content: center;
+   align-items: center;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+  color: #000;
+
+  /*  */
+  /* float: left; */
+}
