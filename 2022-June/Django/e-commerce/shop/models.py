@@ -5,7 +5,7 @@ import os
 # Create your models here.
 
 def getFileName(request,filename):
-    nowTime=datetime.now().strftime("%Y%m%d%H:%M:S")
+    nowTime=datetime.datetime.now().strftime("%Y%m%d%H:%M:S")
     newFilename=f"{nowTime}{filename}"
     return os.path.join('uploads/',newFilename)
 class Category(models.Model):
@@ -16,8 +16,8 @@ class Category(models.Model):
     status=models.BooleanField(default=False,help_text="0-Show,1-Hidden")
     created_at=models.DateTimeField(auto_now_add=True)
 
-def __str__(self):
-    return self.name
+    def __str__(self):
+        return self.name
 
 
 
@@ -35,5 +35,5 @@ class Product(models.Model):
     trending=models.BooleanField(default=False,help_text="0-default,1-Trending")
     created_at=models.DateTimeField(auto_now_add=True)
 
-def __str__(self):
-    return self.name
+    def __str__(self):
+        return self.name
