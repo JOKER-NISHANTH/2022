@@ -1,0 +1,38 @@
+
+pip intall virtualenv
+
+pipenv shell (or) pipenv install django
+
+pipenv --venv
+
+django-admin
+
+django-admin startproject blacky_shop
+
+django-admin startproject blacky_shop . -> project created at current project
+
+python manage.py runserver
+
+python manage.py runserver 8081
+
+pip install mysqlclient
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
+}
+
+DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.mysql',
+            'NAME': 'ecommerce',
+            'HOST':'localhost',
+            'USER':'root',
+            'PASSWORD':'root',
+            'PORT':'3306'
+        }
+}
+
+-------------------------------------------------------------------------
