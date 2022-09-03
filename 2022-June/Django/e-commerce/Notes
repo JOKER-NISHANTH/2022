@@ -65,4 +65,7 @@ python manage.py migrate
 
 python manage.py runserver
 
-    Register the model in admin.py 
+    Register the model in admin.py
+
+-------------------------------------------------------------------------
+pip install django-jazzmin  
