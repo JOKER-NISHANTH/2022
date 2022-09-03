@@ -42,3 +42,27 @@ DATABASES = {
 python manage.py runserver
 
 python manage.py startapp shop
+
+
+-------------------------------------------------------------------------
+
+python manage.py makemigrations
+
+python -m pip install Pillow
+
+
+python manage.py makemigrations
+Migrations for 'shop':                                                                                                                                 shop\migrations\0001_initial.py                                                                                                                        - Create model Category                                                                                                                              - Create model Product
+
+python manage.py migrate
+-------------------------------------------------------------------------
+>py manage.py createsuperuser
+
+ Username: nishanth
+ Email address: nishanthevent@gmailcom
+ PASSWORD : Nishanth-007
+-------------------------------------------------------------------------
+
+python manage.py runserver
+
+    Register the model in admin.py 
