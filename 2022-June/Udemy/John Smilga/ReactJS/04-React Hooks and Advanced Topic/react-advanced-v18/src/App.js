@@ -15,7 +15,11 @@ import React from "react";
 // conditional Rendering
 // import Setup from "./tutorial/3-conditional-rendering/setup/1-multiple-returns";
 // import Setup from "./tutorial/3-conditional-rendering/setup/2-short-circuit";
-import Setup from "./tutorial/3-conditional-rendering/setup/3-show-hide";
+// import Setup from "./tutorial/3-conditional-rendering/setup/3-show-hide";
+
+// forms
+import Setup from "./tutorial/4-forms/setup/1-controlled-inputs";
+// import Setup from "./tutorial/4-forms/setup/2-multiple-inputs";
 
 /*
   component name must be uppercase
