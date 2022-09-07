@@ -19,7 +19,9 @@ import React from "react";
 
 // forms
 // import Setup from "./tutorial/4-forms/setup/1-controlled-inputs";
-import Setup from "./tutorial/4-forms/setup/2-multiple-inputs";
+// import Setup from "./tutorial/4-forms/setup/2-multiple-inputs";
+
+import Setup from "./tutorial/5-useRef/setup/1-useRef-basics";
 
 /*
   component name must be uppercase
