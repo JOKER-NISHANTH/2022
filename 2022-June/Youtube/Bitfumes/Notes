@@ -1,0 +1,14 @@
+Javascript is single thread programming language
+
+Browser
+    dom
+    window
+    interactive app
+    no filesystem
+    ES6
+Node
+    no dom
+    no window
+    server side application
+    filesystem
+    <es6
